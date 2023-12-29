@@ -13,7 +13,24 @@
 		7D2F33AB2B385ACC00DD464A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33A92B385ACC00DD464A /* Main.storyboard */; };
 		7D2F33AD2B385ACE00DD464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33AC2B385ACE00DD464A /* Assets.xcassets */; };
 		7D2F33B02B385ACE00DD464A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33AE2B385ACE00DD464A /* LaunchScreen.storyboard */; };
+		7D2F33C02B396FA300DD464A /* kebukeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33BF2B396FA300DD464A /* kebukeTests.swift */; };
+		7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33C72B39741D00DD464A /* HttpClient.swift */; };
+		7D2F33C92B39741D00DD464A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33C72B39741D00DD464A /* HttpClient.swift */; };
+		7D2F33CC2B39744A00DD464A /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */; };
+		7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B19742B3D51F200097194 /* GlobalConfig.swift */; };
+		7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B197C2B3E64DD00097194 /* Drink.swift */; };
+		7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D2F33C12B396FA300DD464A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D2F33982B385ACC00DD464A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2F339F2B385ACC00DD464A;
+			remoteInfo = kebuke;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7D2F33A02B385ACC00DD464A /* kebuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kebuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +41,24 @@
 		7D2F33AC2B385ACE00DD464A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2F33AF2B385ACE00DD464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2F33B12B385ACE00DD464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D2F33BD2B396FA300DD464A /* kebukeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kebukeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2F33BF2B396FA300DD464A /* kebukeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kebukeTests.swift; sourceTree = "<group>"; };
+		7D2F33C72B39741D00DD464A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
+		7D3B19742B3D51F200097194 /* GlobalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
+		7D3B197C2B3E64DD00097194 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7D2F339D2B385ACC00DD464A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2F33BA2B396FA300DD464A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2F33A22B385ACC00DD464A /* kebuke */,
+				7D2F33BE2B396FA300DD464A /* kebukeTests */,
 				7D2F33A12B385ACC00DD464A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2F33A02B385ACC00DD464A /* kebuke.app */,
+				7D2F33BD2B396FA300DD464A /* kebukeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +89,9 @@
 		7D2F33A22B385ACC00DD464A /* kebuke */ = {
 			isa = PBXGroup;
 			children = (
+				7D2F33CE2B3976DF00DD464A /* Protocols */,
+				7D2F33CD2B3976CE00DD464A /* Models */,
+				7D2F33C62B39740300DD464A /* Services */,
 				7D2F33A32B385ACC00DD464A /* AppDelegate.swift */,
 				7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */,
 				7D2F33A72B385ACC00DD464A /* ViewController.swift */,
@@ -65,6 +101,48 @@
 				7D2F33B12B385ACE00DD464A /* Info.plist */,
 			);
 			path = kebuke;
+			sourceTree = "<group>";
+		};
+		7D2F33BE2B396FA300DD464A /* kebukeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F33CA2B39742E00DD464A /* Services */,
+				7D2F33BF2B396FA300DD464A /* kebukeTests.swift */,
+			);
+			path = kebukeTests;
+			sourceTree = "<group>";
+		};
+		7D2F33C62B39740300DD464A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F33C72B39741D00DD464A /* HttpClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D2F33CA2B39742E00DD464A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D2F33CD2B3976CE00DD464A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D3B19742B3D51F200097194 /* GlobalConfig.swift */,
+				7D3B197C2B3E64DD00097194 /* Drink.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D2F33CE2B3976DF00DD464A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +165,24 @@
 			productReference = 7D2F33A02B385ACC00DD464A /* kebuke.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7D2F33BC2B396FA300DD464A /* kebukeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2F33C52B396FA300DD464A /* Build configuration list for PBXNativeTarget "kebukeTests" */;
+			buildPhases = (
+				7D2F33B92B396FA300DD464A /* Sources */,
+				7D2F33BA2B396FA300DD464A /* Frameworks */,
+				7D2F33BB2B396FA300DD464A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D2F33C22B396FA300DD464A /* PBXTargetDependency */,
+			);
+			name = kebukeTests;
+			productName = kebukeTests;
+			productReference = 7D2F33BD2B396FA300DD464A /* kebukeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +195,10 @@
 				TargetAttributes = {
 					7D2F339F2B385ACC00DD464A = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					7D2F33BC2B396FA300DD464A = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 7D2F339F2B385ACC00DD464A;
 					};
 				};
 			};
@@ -116,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				7D2F339F2B385ACC00DD464A /* kebuke */,
+				7D2F33BC2B396FA300DD464A /* kebukeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +232,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D2F33BB2B396FA300DD464A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +247,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2F33A82B385ACC00DD464A /* ViewController.swift in Sources */,
+				7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
+				7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */,
+				7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */,
+				7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D2F33B92B396FA300DD464A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2F33C92B39741D00DD464A /* HttpClient.swift in Sources */,
+				7D2F33CC2B39744A00DD464A /* HttpClientTests.swift in Sources */,
+				7D2F33C02B396FA300DD464A /* kebukeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D2F33C22B396FA300DD464A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2F339F2B385ACC00DD464A /* kebuke */;
+			targetProxy = 7D2F33C12B396FA300DD464A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7D2F33A92B385ACC00DD464A /* Main.storyboard */ = {
@@ -341,6 +471,42 @@
 			};
 			name = Release;
 		};
+		7D2F33C32B396FA300DD464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PVCBJ579RG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GGO.kebukeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kebuke.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kebuke";
+			};
+			name = Debug;
+		};
+		7D2F33C42B396FA300DD464A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PVCBJ579RG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GGO.kebukeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kebuke.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kebuke";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +524,15 @@
 			buildConfigurations = (
 				7D2F33B52B385ACE00DD464A /* Debug */,
 				7D2F33B62B385ACE00DD464A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D2F33C52B396FA300DD464A /* Build configuration list for PBXNativeTarget "kebukeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2F33C32B396FA300DD464A /* Debug */,
+				7D2F33C42B396FA300DD464A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
