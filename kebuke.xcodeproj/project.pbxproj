@@ -12,10 +12,8 @@
 		7D2F33AB2B385ACC00DD464A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33A92B385ACC00DD464A /* Main.storyboard */; };
 		7D2F33AD2B385ACE00DD464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33AC2B385ACE00DD464A /* Assets.xcassets */; };
 		7D2F33B02B385ACE00DD464A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33AE2B385ACE00DD464A /* LaunchScreen.storyboard */; };
-		7D2F33C02B396FA300DD464A /* kebukeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33BF2B396FA300DD464A /* kebukeTests.swift */; };
 		7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33C72B39741D00DD464A /* HttpClient.swift */; };
 		7D2F33C92B39741D00DD464A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33C72B39741D00DD464A /* HttpClient.swift */; };
-		7D2F33CC2B39744A00DD464A /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */; };
 		7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B19742B3D51F200097194 /* GlobalConfig.swift */; };
 		7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B197C2B3E64DD00097194 /* Drink.swift */; };
 		7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */; };
@@ -45,9 +43,7 @@
 		7D2F33AF2B385ACE00DD464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2F33B12B385ACE00DD464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D2F33BD2B396FA300DD464A /* kebukeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kebukeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2F33BF2B396FA300DD464A /* kebukeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kebukeTests.swift; sourceTree = "<group>"; };
 		7D2F33C72B39741D00DD464A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
-		7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
 		7D3B19742B3D51F200097194 /* GlobalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		7D3B197C2B3E64DD00097194 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				7D2F33A22B385ACC00DD464A /* kebuke */,
-				7D2F33BE2B396FA300DD464A /* kebukeTests */,
 				7D2F33A12B385ACC00DD464A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,27 +109,10 @@
 			path = kebuke;
 			sourceTree = "<group>";
 		};
-		7D2F33BE2B396FA300DD464A /* kebukeTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D2F33CA2B39742E00DD464A /* Services */,
-				7D2F33BF2B396FA300DD464A /* kebukeTests.swift */,
-			);
-			path = kebukeTests;
-			sourceTree = "<group>";
-		};
 		7D2F33C62B39740300DD464A /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				7D2F33C72B39741D00DD464A /* HttpClient.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		7D2F33CA2B39742E00DD464A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				7D2F33CB2B39744A00DD464A /* HttpClientTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,8 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2F33C92B39741D00DD464A /* HttpClient.swift in Sources */,
-				7D2F33CC2B39744A00DD464A /* HttpClientTests.swift in Sources */,
-				7D2F33C02B396FA300DD464A /* kebukeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
