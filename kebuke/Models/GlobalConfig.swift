@@ -8,7 +8,32 @@
 import Foundation
 
 struct GlobalConfig {
-    // 全部飲品
+    /**
+     飲品分類，格式如下
+     [
+        父分類1: [String(子分類名稱)]
+     ]
+     */
+    static var series: [String: [String]] = [
+        "期間限定": [
+            "期間限定"
+        ],
+        "經典飲品": [
+            "單品茶 Classic",
+            "調茶 Mix tea",
+            "雲蓋 Sweet Cream Cold Foam",
+            "歐蕾 Milk tea"
+        ],
+    ]
+    
+    /**
+     全部飲料，格式如下
+     [
+        "子分類1": [Drink],
+        "子分類2": [Drink],
+        "子分類3": [Drink],
+     ]
+     */
     static var drinks: [String: [Drink]] = [String: [Drink]]()
     
     // 甜度選項
@@ -37,18 +62,5 @@ struct GlobalConfig {
     static var sizeOptions: [String] = [
         "中",
         "大"
-    ]
-    
-    // 飲品分類
-    static var series: [String: [String]] = [
-        "期間限定": [
-            "期間限定"
-        ],
-        "經典飲品": [
-            "單品茶 Classic",
-            "調茶 Mix tea",
-            "雲蓋 Sweet Cream Cold Foam",
-            "歐蕾 Milk tea"
-        ],
     ]
 }

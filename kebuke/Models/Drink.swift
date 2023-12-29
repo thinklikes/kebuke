@@ -5,6 +5,7 @@
 //  Created by Rhys.K on 2023/12/29.
 //
 
+import UIKit
 import Foundation
 
 struct Drink: Codable {
@@ -20,5 +21,12 @@ struct Drink: Codable {
         self.series = series
         self.price = price
         self.canBeHeated = canBeHeated
+    }
+    
+    /**
+     飲料圖片
+     */
+    func image() -> UIImage {
+        return UIImage(named: "\(name)") ?? UIImage(named: "logo")!
     }
 }
