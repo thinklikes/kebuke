@@ -8,6 +8,7 @@
 import Foundation
 
 protocol HttpDelegate {
-    func httpClient(httpClient: HttpClient, GetDrinks section: Int)
+    func httpClient(httpClient: HttpClient, GetOrders section: Int)
+    func httpClient(httpClient: HttpClient, CreateOrder section: Int)
 }
 

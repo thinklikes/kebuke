@@ -42,19 +42,40 @@ class HttpClient {
         }
     }
     
-    func post() async throws {
+    func post(url: String, data: String, colsure: @escaping (String) -> Void) {
         
+        if let url = URL(string: url) {
+            var request = URLRequest(url: url)
+            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request.httpMethod = "POST"
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data else {
+                    print(String(describing: error))
+                    return
+                }
+                colsure(String(data: data, encoding: .utf8)!)
+            }
+
+            task.resume()
+        }
     }
 }
 
 extension HttpClient {
     
-    func getDrinks() {
-        get(url: "https://api.airtable.com/v0/app6fNRFFBRQsU3C8/drinks") { data in
+    func getOrders() {
+        get(url: "https://api.airtable.com/v0/app6fNRFFBRQsU3C8/orders?sort[0][field]=drink&sort[1][field]=size&sort[2][field]=suger&sort[3][field]=temperature") { data in
             self.data = data
-            self.delegate?.httpClient(httpClient: self, GetDrinks: 0) ?? nil
+            self.delegate?.httpClient(httpClient: self, GetOrders: 0) ?? nil
         }
     }
     
+//    func createOrder(order: Order) {
+//        post(url:"https://api.airtable.com") { data in
+//            self.data = data
+//            self.delegate?.httpClient(httpClient: self, CreateOrder: 0) ?? nil
+//        }
+//    }
 }
 

@@ -23,19 +23,19 @@ struct Order {
         self.sugar = sugar
         self.temperature = temperature
         self.price = price
-        self.drink = findDrink()
+//        self.drink = findDrink()
     }
     
-    func findDrink() -> Drink? {
-        for (_, drinks) in GlobalConfig.drinks {
-            for drink: Drink in drinks {
-                if(drink.name == self.drinkName) {
-                    self.drink = Optional(drink)
-                    break
-                }
-            }
-        }
-        
-        return nil
-    }
+//    func findDrink() -> Drink? {
+//        for (_, drinks) in GlobalConfig.drinks {
+//            for drink: Drink in drinks {
+//                if(drink.name == self.drinkName) {
+//                    self.drink = Optional(drink)
+//                    break
+//                }
+//            }
+//        }
+//        
+//        return nil
+//    }
 }
