@@ -27,7 +27,7 @@ struct Drink: Codable {
      飲料圖片
      */
     func image() -> UIImage {
-        return UIImage(named: "\(name)") ?? UIImage(named: "logo")!
+        return UIImage(named: "\(name)") ?? UIImage(named: "icon")!
     }
     
     func getPriceAmount(size: String) -> Int {

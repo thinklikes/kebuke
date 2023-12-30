@@ -18,11 +18,11 @@ class HomeViewController: UIViewController {
     }
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var specialCollectionView: UICollectionView!
-
+    @IBOutlet weak var classicalCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         greetingLabel.text = "哈囉！\(String(user!))～作伙乎乾 :D"
-
     }
 
     @IBSegueAction func chooseDrink(_ coder: NSCoder) -> UIViewController? {
@@ -39,16 +39,27 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        GlobalConfig.drinks["季節限定"]?.count ?? 1
+        1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(SpecialCollectionViewCell.self)", for: indexPath) as! SpecialCollectionViewCell
-        if let drinks = GlobalConfig.drinks["季節限定"] {
-            cell.imageView.image = drinks[indexPath.row].image()
-            cell.titleLabel.text = drinks[indexPath.row].name
-            cell.descriptionLabel.text = drinks[indexPath.row].description
-        }
-        return cell
+
+//        switch collectionView {
+//        case specialCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(SpecialCollectionViewCell.self)", for: indexPath) as! SpecialCollectionViewCell
+            if let drinks = GlobalConfig.drinks["季節限定"] {
+                cell.imageView.image = drinks[indexPath.row].image()
+                cell.titleLabel.text = drinks[indexPath.row].name
+                cell.descriptionLabel.text = drinks[indexPath.row].description
+            }
+            return cell
+//        default:
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ClassicalCollectionViewCell.self)", for: indexPath) as! ClassicalCollectionViewCell
+//            if let drinks = GlobalConfig.drinks["單品茶"] {
+//                cell.imageView.image = drinks[indexPath.row].image()
+//                cell.titleLabel.text = drinks[indexPath.row].name
+//            }
+//            return cell
+//        }
     }
 }
