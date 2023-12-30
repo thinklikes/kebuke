@@ -12,14 +12,14 @@ struct Drink: Codable {
     let name: String
     let description: String
     let series: String
-    let price: [[String: String]]
+    let prices: [[String: String]]
     let canBeHeated: Bool
     
-    init(name: String, description: String, series: String, price: [[String : String]], canBeHeated: Bool) {
+    init(name: String, description: String, series: String, prices: [[String : String]], canBeHeated: Bool) {
         self.name = name
         self.description = description
         self.series = series
-        self.price = price
+        self.prices = prices
         self.canBeHeated = canBeHeated
     }
     
@@ -28,5 +28,18 @@ struct Drink: Codable {
      */
     func image() -> UIImage {
         return UIImage(named: "\(name)") ?? UIImage(named: "logo")!
+    }
+    
+    func getPriceAmount(size: String) -> Int {
+        let filtered = prices.filter { price in
+            return price["label"] == size
+        }
+        
+        if (filtered.isEmpty) {
+            return 0
+        }
+        let priceString = filtered.first?["value"]
+        
+        return Int(priceString ?? "") ?? 0
     }
 }

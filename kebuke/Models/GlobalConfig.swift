@@ -8,6 +8,7 @@
 import Foundation
 
 struct GlobalConfig {
+    static let apiToken = "pattKTPxID8DAqYxQ.bc2c4b19dbb0e25e2ec083d8155eaa01e29376d2cbce93ef807b03cf4d949285"
     /**
      飲品分類，格式如下
      [

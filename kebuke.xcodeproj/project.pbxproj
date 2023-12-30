@@ -18,6 +18,7 @@
 		7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B197C2B3E64DD00097194 /* Drink.swift */; };
 		7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */; };
 		7D8378AB2B3EC94300D97D58 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378AA2B3EC94300D97D58 /* Order.swift */; };
+		7D8378B32B3FBB5800D97D58 /* CreateOrderBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */; };
 		B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC62B3C542700D5A69B /* LoginViewController.swift */; };
 		B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC82B3C727D00D5A69B /* HomeViewController.swift */; };
 		B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */; };
@@ -50,6 +51,7 @@
 		7D3B197C2B3E64DD00097194 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDelegate.swift; sourceTree = "<group>"; };
 		7D8378AA2B3EC94300D97D58 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderBody.swift; sourceTree = "<group>"; };
 		B0180CC62B3C542700D5A69B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0180CC82B3C727D00D5A69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				7D3B19742B3D51F200097194 /* GlobalConfig.swift */,
 				7D3B197C2B3E64DD00097194 /* Drink.swift */,
 				7D8378AA2B3EC94300D97D58 /* Order.swift */,
+				7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
 				B04DF26F2B3FE5570059AD28 /* DrinkViewController.swift in Sources */,
+				7D8378B32B3FBB5800D97D58 /* CreateOrderBody.swift in Sources */,
 				B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
 				B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */,
