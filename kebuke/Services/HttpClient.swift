@@ -11,7 +11,7 @@ import Foundation
 class HttpClient {
     let delegate: HttpDelegate?
     var data: String
-    var token = "patdxtA9YR8RiI7bL.2c285057c82c2280fac92883e84e5fee586ab0b802d9ffbb0ed0787986d05e1f"
+    var token = GlobalConfig.apiToken
     static let GetDrinks: Int = 0
     
     init(delegate: HttpDelegate) {
@@ -42,12 +42,13 @@ class HttpClient {
         }
     }
     
-    func post(url: String, data: String, colsure: @escaping (String) -> Void) {
+    func post(url: String, data: Data?, colsure: @escaping (String) -> Void) {
         
         if let url = URL(string: url) {
             var request = URLRequest(url: url)
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
             request.httpMethod = "POST"
+            request.httpBody = data
             
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data else {
@@ -64,18 +65,21 @@ class HttpClient {
 
 extension HttpClient {
     
-    func getOrders() {
+    public func getOrders() {
         get(url: "https://api.airtable.com/v0/app6fNRFFBRQsU3C8/orders?sort[0][field]=drink&sort[1][field]=size&sort[2][field]=suger&sort[3][field]=temperature") { data in
             self.data = data
             self.delegate?.httpClient(httpClient: self, GetOrders: 0) ?? nil
         }
     }
     
-//    func createOrder(order: Order) {
-//        post(url:"https://api.airtable.com") { data in
-//            self.data = data
-//            self.delegate?.httpClient(httpClient: self, CreateOrder: 0) ?? nil
-//        }
-//    }
+    public func createOrder(order: Order) {
+        let body = CreateOrderBody(records: [order])
+        let encoded = try? JSONEncoder().encode(body)
+
+        post(url:"https://api.airtable.com", data: encoded) { data in
+            self.data = data
+            self.delegate?.httpClient(httpClient: self, CreateOrder: 0) ?? nil
+        }
+    }
 }
 

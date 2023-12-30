@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct CreateOrderBody: Codable {
+    let records: [Order]
+    
+    init(records: [Order]) {
+        self.records = records
+    }
+}

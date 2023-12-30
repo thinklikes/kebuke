@@ -4,13 +4,13 @@
       "series": "季節限定",
       "description": "草莓紅茶與鮮切檸檬酸甜滋味搭配Q軟菓玉滿足嚼慾",
       "name": "草莓檸果",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "65"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "75"
         }
       ],
@@ -20,13 +20,13 @@
       "series": "季節限定",
       "description": "以低脂可可搭配經典歐蕾夾帶一絲草莓香氣",
       "name": "草莓歐可",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "75"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "85"
         }
       ],
@@ -36,13 +36,13 @@
       "series": "季節限定",
       "description": "帶有草莓花果調性的日常茶飲",
       "name": "草莓紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "45"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "50"
         }
       ],
@@ -52,13 +52,13 @@
       "series": "季節限定",
       "description": "草莓波登搭配鮮切檸檬甜中帶酸愈喝愈濃烈",
       "name": "草莓波登",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "65"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "75"
         }
       ],
@@ -70,13 +70,13 @@
       "series": "單品茶",
       "description": "帶有濃穩果香的經典紅茶",
       "name": "熟成紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -86,13 +86,13 @@
       "series": "單品茶",
       "description": "令人傾心淡雅的花香調紅茶",
       "name": "麗春紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -102,13 +102,13 @@
       "series": "單品茶",
       "description": "絲絨般果香調與一抹蜜桃風味",
       "name": "胭脂紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "45"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "50"
         }
       ],
@@ -118,13 +118,13 @@
       "series": "單品茶",
       "description": "舌尖上的蜂蜜尾韻與經典熟成的香氣",
       "name": "金蜜紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "50"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "60"
         }
       ],
@@ -134,13 +134,13 @@
       "series": "單品茶",
       "description": "春滿四溢的青翠綠茶",
       "name": "春芽綠茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -150,13 +150,13 @@
       "series": "單品茶",
       "description": "古法熬煮而成清沁滑順冬瓜露",
       "name": "雪花冷露",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -166,13 +166,13 @@
       "series": "單品茶",
       "description": "經典紅茶與古法熬煮冬瓜露",
       "name": "熟成冷露",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -182,13 +182,13 @@
       "series": "單品茶",
       "description": "青翠綠茶與古法熬煮冬瓜露",
       "name": "春芽冷露",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "35"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "40"
         }
       ],
@@ -200,13 +200,13 @@
       "series": "調茶",
       "description": "整顆鮮檸檬與經典紅茶清純爽口",
       "name": "熟成檸果",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -216,13 +216,13 @@
       "series": "調茶",
       "description": "整顆鮮檸檬佐古法熬製的冬瓜露",
       "name": "冷露檸果",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -232,13 +232,13 @@
       "series": "調茶",
       "description": "兒時記憶裡的多多碰上熟後的蜜桃風味",
       "name": "胭脂多多",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "50"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "60"
         }
       ],
@@ -248,13 +248,13 @@
       "series": "調茶",
       "description": "清爽酸甜的蜂蜜與鮮切檸檬",
       "name": "金蜜檸果",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "50"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "60"
         }
       ],
@@ -264,13 +264,13 @@
       "series": "調茶",
       "description": "經典熟成與整顆檸檬帶上清甜蜂蜜的尾韻",
       "name": "金檸熟成",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -280,13 +280,13 @@
       "series": "調茶",
       "description": "蜂蜜檸檬清新酸甜氣息而後帶上青翠茶韻",
       "name": "金檸春芽",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -296,13 +296,13 @@
       "series": "調茶",
       "description": "桑椹莓果與經典熟成的邂逅",
       "name": "桑檸熟成",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -312,13 +312,13 @@
       "series": "調茶",
       "description": "清新文旦柚與莓果的甘甜滋味",
       "name": "柚果紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -328,13 +328,13 @@
       "series": "調茶",
       "description": "香橙柑橘與莓果堆疊甘醇熟成沁入喉間",
       "name": "橙果紅茶",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -344,13 +344,13 @@
       "series": "調茶",
       "description": "莓果與綠茶的初戀般酸甜滋味",
       "name": "莓果春芽",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -362,13 +362,13 @@
       "series": "雲蓋",
       "description": "經典熟成紅茶跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋熟成",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "65"
         }
       ],
@@ -378,13 +378,13 @@
       "series": "雲蓋",
       "description": "淡花香的麗春跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋麗春",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "65"
         }
       ],
@@ -394,13 +394,13 @@
       "series": "雲蓋",
       "description": "恬淡蜜桃果香跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋胭脂",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "65"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -410,13 +410,13 @@
       "series": "雲蓋",
       "description": "春滿四溢的青山跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋春芽",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "65"
         }
       ],
@@ -426,13 +426,13 @@
       "series": "雲蓋",
       "description": "茶底蘊與鮮奶的濃醇跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "65"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "75"
         }
       ],
@@ -442,13 +442,13 @@
       "series": "雲蓋",
       "description": "娓娓道出的餅香炒糖韻跳入玫瑰雲蓋般的甜綿",
       "name": "雲蓋黑蜜",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "70"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "80"
         }
       ],
@@ -460,13 +460,13 @@
       "series": "歐蕾",
       "description": "醇厚鮮奶交織經典紅茶的奶茶",
       "name": "熟成歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "55"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "65"
         }
       ],
@@ -476,13 +476,13 @@
       "series": "歐蕾",
       "description": "古法熬煮的冬瓜露遇上醇厚鮮奶茶",
       "name": "冷露歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "55"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "65"
         }
       ],
@@ -492,13 +492,13 @@
       "series": "歐蕾",
       "description": "醇厚鮮奶茶咀嚼著Q彈白透珍珠",
       "name": "白玉歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -508,13 +508,13 @@
       "series": "歐蕾",
       "description": "奶與茶香味四溢而蜂蜜藏在喉間裡",
       "name": "金蜜歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],
@@ -524,13 +524,13 @@
       "series": "歐蕾",
       "description": "茶與奶香背後藏匿的是恰如其分的餅香炒糖韻",
       "name": "黑蜜歐蕾",
-      "price": [
+      "prices": [
         {
-          "label": "中",
+          "label": "中杯",
           "value": "60"
         },
         {
-          "label": "大",
+          "label": "大杯",
           "value": "70"
         }
       ],

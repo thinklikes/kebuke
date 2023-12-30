@@ -7,35 +7,35 @@
 
 import Foundation
 
-struct Order {
+struct Order: Codable {
     let user: String
-    var drink: Drink?
     let drinkName: String
     let size: String
     let sugar: String
     let temperature: String
-    let price: Int
+    var price: Int = 0
+    var drink: Drink?
     
-    init(user: String, drinkName: String, size: String, sugar: String, temperature: String, price: Int) {
+    init(user: String, drinkName: String, size: String, sugar: String, temperature: String) {
         self.user = user
         self.drinkName = drinkName
         self.size = size
         self.sugar = sugar
         self.temperature = temperature
-        self.price = price
-//        self.drink = findDrink()
+        self.drink = findDrink()
+        self.price = self.drink?.getPriceAmount(size: size) ?? 0
+
     }
     
-//    func findDrink() -> Drink? {
-//        for (_, drinks) in GlobalConfig.drinks {
-//            for drink: Drink in drinks {
-//                if(drink.name == self.drinkName) {
-//                    self.drink = Optional(drink)
-//                    break
-//                }
-//            }
-//        }
-//        
-//        return nil
-//    }
+    func findDrink() -> Drink? {
+        for (_, drinks) in GlobalConfig.drinks {
+            for drink: Drink in drinks {
+                if(drink.name == self.drinkName) {
+                    return drink
+                }
+            }
+        }
+        
+        return nil
+    }
 }
