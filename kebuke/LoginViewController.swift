@@ -81,10 +81,10 @@ extension LoginViewController: UITextFieldDelegate {
                 AlertLabel.text = "請輸入 \(min) 至 \(max) 個中英文字"
             }
             
-            AlertLabel.isHidden = false
+            AlertLabel.layer.opacity = 1
             return false
         }
-        AlertLabel.isHidden = true
+        AlertLabel.layer.opacity = 0
         return true
     }
 }

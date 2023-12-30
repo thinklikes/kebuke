@@ -13,11 +13,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var headerUIView: UIView! {
         didSet {
-            headerUIView.layer.cornerRadius = 4
-            headerUIView.layer.shadowOffset = CGSize(width: 0,height: 4)
-            headerUIView.layer.shadowRadius = 4
-            headerUIView.layer.shadowOpacity = 0.1
-            headerUIView.layer.shadowColor = UIColor.strong.cgColor
+            drawBlock(view: headerUIView)
         }
     }
     
@@ -30,14 +26,19 @@ class HomeViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        1
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(SpecialCollectionViewCell.self)", for: indexPath) as! SpecialCollectionViewCell
+        cell.imageView.image = UIImage(named: "drink-template")
+        cell.titleLabel.text = "朱玉歐蕾"
+        cell.descriptionLabel.text = "木質果香調的熟成紅茶與香醇濃厚的鮮奶，揉合出細緻優雅的尾韻"
+        return cell
+    }
 }

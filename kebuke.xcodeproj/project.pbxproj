@@ -24,6 +24,7 @@
 		B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC82B3C727D00D5A69B /* HomeViewController.swift */; };
 		B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */; };
 		B0180CCD2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCC2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift */; };
+		B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCE2B3FB5AB00D5A69B /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B0180CC82B3C727D00D5A69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 		B0180CCC2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		B0180CCE2B3FB5AB00D5A69B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				7D2F33C62B39740300DD464A /* Services */,
 				B0180CC62B3C542700D5A69B /* LoginViewController.swift */,
 				B0180CC82B3C727D00D5A69B /* HomeViewController.swift */,
+				B0180CCE2B3FB5AB00D5A69B /* View.swift */,
 				B0180CCC2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift */,
 				7D2F33A32B385ACC00DD464A /* AppDelegate.swift */,
 				7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */,
@@ -269,6 +272,7 @@
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
 				B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
+				B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */,
 				B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
