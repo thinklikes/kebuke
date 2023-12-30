@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
         if let title = classicalUIButtons[selectClassicalIndex].titleLabel,
            let text = title.text {
             selectClassicalTitle = text
-//            classicalCollectionView.reloadData()
+            classicalCollectionView.reloadData()
         }
         updateClassicalUIButton()
     }
