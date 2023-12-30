@@ -8,9 +8,9 @@
 import Foundation
 
 struct CreateOrderBody: Codable {
-    let records: [Order]
+    let records: [[String: Order]]
     
-    init(records: [Order]) {
-        self.records = records
+    init(order: Order) {
+        self.records = [["fields": order]]
     }
 }

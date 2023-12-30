@@ -22,11 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error)
             }
         }
-        
-//        let httpClient = HttpClient(delegate: self)
-//        var order: Order = Order(user: "巴黎人", drinkName: "草莓歐可", size: "大", sugar: "半糖", temperature: "去冰")
-//        print(order)
-        
+
         return true
     }
 
@@ -42,15 +38,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-}
-
-extension AppDelegate: HttpDelegate {
-    func httpClient(httpClient: HttpClient, GetOrders section: Int) {
-        print(httpClient.data)
-    }
-    
-    func httpClient(httpClient: HttpClient, CreateOrder section: Int) {
-        print(httpClient.data)
     }
 }

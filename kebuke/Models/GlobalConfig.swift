@@ -9,6 +9,12 @@ import Foundation
 
 struct GlobalConfig {
     static let apiToken = "pattKTPxID8DAqYxQ.bc2c4b19dbb0e25e2ec083d8155eaa01e29376d2cbce93ef807b03cf4d949285"
+    
+    static let apiHost = "https://api.airtable.com"
+    
+    static let apiVersion = "v0"
+    
+    static let clientId = "app6fNRFFBRQsU3C8"
     /**
      飲品分類，格式如下
      [
@@ -50,9 +56,10 @@ struct GlobalConfig {
     
     // 冰塊選項
     static var temperatureOptions: [String] = [
-        "全冰",
+        "正常冰",
         "少冰",
         "去冰",
+        "微冰",
         "完全去冰",
         "常溫",
         "溫",
