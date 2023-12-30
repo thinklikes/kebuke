@@ -15,14 +15,14 @@ struct GlobalConfig {
      ]
      */
     static var series: [String: [String]] = [
-        "期間限定": [
-            "期間限定"
+        "季節限定": [
+            "季節限定"
         ],
         "經典飲品": [
-            "單品茶 Classic",
-            "調茶 Mix tea",
-            "雲蓋 Sweet Cream Cold Foam",
-            "歐蕾 Milk tea"
+            "單品茶",
+            "調茶",
+            "雲蓋",
+            "歐蕾"
         ],
     ]
     
