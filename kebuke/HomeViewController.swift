@@ -9,36 +9,46 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var name: String!
+    var user: String!
 
     @IBOutlet weak var headerUIView: UIView! {
         didSet {
             drawBlock(view: headerUIView)
         }
     }
-    
     @IBOutlet weak var greetingLabel: UILabel!
-    
+    @IBOutlet weak var specialCollectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingLabel.text = "哈囉！\(String(name!))～作伙乎乾 :D"
+        greetingLabel.text = "哈囉！\(String(user!))～作伙乎乾 :D"
 
     }
-    
 
+    @IBSegueAction func chooseDrink(_ coder: NSCoder) -> UIViewController? {
+        let controller = DrinkViewController(coder: coder)
+        guard let item = specialCollectionView.indexPathsForSelectedItems?.first?.item else {
+            return nil
+        }
+        controller?.drink = GlobalConfig.drinks["季節限定"]?[item]
+        return controller
+    }
+    
 
 }
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        GlobalConfig.drinks["季節限定"]?.count ?? 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(SpecialCollectionViewCell.self)", for: indexPath) as! SpecialCollectionViewCell
-        cell.imageView.image = UIImage(named: "drink-template")
-        cell.titleLabel.text = "朱玉歐蕾"
-        cell.descriptionLabel.text = "木質果香調的熟成紅茶與香醇濃厚的鮮奶，揉合出細緻優雅的尾韻"
+        if let drinks = GlobalConfig.drinks["季節限定"] {
+            cell.imageView.image = drinks[indexPath.row].image()
+            cell.titleLabel.text = drinks[indexPath.row].name
+            cell.descriptionLabel.text = drinks[indexPath.row].description
+        }
         return cell
     }
 }

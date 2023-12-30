@@ -23,6 +23,7 @@
 		B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */; };
 		B0180CCD2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCC2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift */; };
 		B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCE2B3FB5AB00D5A69B /* View.swift */; };
+		B04DF26F2B3FE5570059AD28 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 		B0180CCC2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCollectionViewCell.swift; sourceTree = "<group>"; };
 		B0180CCE2B3FB5AB00D5A69B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7D2F33A32B385ACC00DD464A /* AppDelegate.swift */,
 				7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */,
 				7D2F33A92B385ACC00DD464A /* Main.storyboard */,
+				B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */,
 				B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */,
 				7D2F33AC2B385ACE00DD464A /* Assets.xcassets */,
 				7D2F33AE2B385ACE00DD464A /* LaunchScreen.storyboard */,
@@ -248,6 +251,7 @@
 				B0180CCD2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift in Sources */,
 				B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
+				B04DF26F2B3FE5570059AD28 /* DrinkViewController.swift in Sources */,
 				B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
 				B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */,

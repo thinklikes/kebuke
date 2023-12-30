@@ -25,14 +25,14 @@ class LoginViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var NameTextField: TextFieldWithPadding!
+    @IBOutlet weak var userTextField: TextFieldWithPadding!
 
     @IBOutlet weak var AlertLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NameTextField.delegate = self
+        userTextField.delegate = self
         
     }
 
@@ -48,22 +48,22 @@ class LoginViewController: UIViewController {
     
     @IBSegueAction func Login(_ coder: NSCoder) -> HomeViewController? {
         let controller = HomeViewController(coder: coder)
-        controller?.name = NameTextField.text
+        controller?.user = userTextField.text
         return controller
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        validateName(NameTextField)
+        validateUser(userTextField)
     }
 }
 
 extension LoginViewController: UITextFieldDelegate {
-    func validateName(_ textField: UITextField) -> Bool {
+    func validateUser(_ textField: UITextField) -> Bool {
         guard let text = textField.text else {
             return false
         }
         // 用來判斷文字長度的 range
-        let characterRange = 2...6
+        let characterRange = 2...8
 
         // 判斷是否有特殊符號的正規表達式
         let pattern = "[^a-zA-Z\\u4e00-\\u9fa5]+"

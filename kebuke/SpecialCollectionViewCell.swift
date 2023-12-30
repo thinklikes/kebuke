@@ -16,7 +16,7 @@ class SpecialCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            titleLabel.layer.backgroundColor = UIColor.white.withAlphaComponent(0.3).cgColor
+            titleLabel.layer.backgroundColor = UIColor.white.withAlphaComponent(0.2).cgColor
         }
     }
     @IBOutlet weak var descriptionLabel: UILabel!
