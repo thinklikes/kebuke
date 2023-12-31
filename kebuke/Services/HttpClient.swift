@@ -10,7 +10,7 @@ import Foundation
 
 class HttpClient {
     let delegate: HttpDelegate?
-    var data: String
+    var data: Any
     var token = GlobalConfig.apiToken
     static let GetDrinks: Int = 0
     
@@ -25,7 +25,7 @@ class HttpClient {
     }
     
     // get 方法
-    func get(url: String, colsure: @escaping (String) -> Void) {
+    private final func get(url: String, colsure: @escaping (Data?) -> Void) {
         
         if let url = URL(string: url) {
             var request = URLRequest(url: url)
@@ -36,7 +36,7 @@ class HttpClient {
                     print(String(describing: error))
                     return
                 }
-                colsure(String(data: data, encoding: .utf8)!)
+                colsure(data)
             }
 
             task.resume()
@@ -44,7 +44,7 @@ class HttpClient {
     }
     
     // post 方法
-    func post(url: String, data: Data?, colsure: @escaping (String) -> Void) {
+    private final func post(url: String, data: Data?, colsure: @escaping (Data?) -> Void) {
         
         if let url = URL(string: url) {
             var request = URLRequest(url: url)
@@ -66,7 +66,7 @@ class HttpClient {
                     print(String(describing: error))
                     return
                 }
-                colsure(String(data: data, encoding: .utf8)!)
+                colsure(data)
             }
 
             task.resume()
@@ -77,9 +77,10 @@ class HttpClient {
 extension HttpClient {
     
     public func getOrders() {
-        get(url: "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature") { data in
-            self.data = data
-            self.delegate?.httpClient(httpClient: self, GetOrders: 0) ?? nil
+        get(url: "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?pageSize=20&sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature") { data in
+            guard let decoded = try? JSONDecoder().decode(GetOrdersResponseBody.self, from: data!) else { fatalError("can not find records") }
+            self.data = decoded as GetOrdersResponseBody
+            self.delegate?.httpClient(httpClient: self, GetOrders: 0)
         }
     }
     
@@ -95,11 +96,12 @@ extension HttpClient {
         httpClient.createOrder(order: order)
      */
     public func createOrder(order: Order) {
-        let body = CreateOrderBody(order: order)
+        let body = Record(order: order)
         let encoded = try? JSONEncoder().encode(body)
 
         post(url:"\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders", data: encoded) { data in
-            self.data = data
+            guard let decoded = try? JSONDecoder().decode(Record.self, from: data!) else { fatalError("resolved response error") }
+            self.data = decoded as Record
             self.delegate?.httpClient(httpClient: self, CreateOrder: 0) ?? nil
         }
     }
