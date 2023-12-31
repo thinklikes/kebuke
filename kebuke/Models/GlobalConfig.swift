@@ -44,7 +44,7 @@ struct GlobalConfig {
     static var drinks: [String: [Drink]] = [String: [Drink]]()
     
     // 甜度選項
-    static var sugarOptions: [String] = [
+    static let sugarOptions: [String] = [
         "正常糖",
         "少糖",
         "半糖",
@@ -55,7 +55,7 @@ struct GlobalConfig {
     ]
     
     // 冰塊選項
-    static var temperatureOptions: [String] = [
+    static let temperatureOptions: [String] = [
         "正常冰",
         "少冰",
         "微冰",
@@ -67,8 +67,8 @@ struct GlobalConfig {
     ]
     
     // 容量選項
-    static var sizeOptions: [String] = [
-        "中",
-        "大"
+    static let sizeOptions: [String] = [
+        "中杯",
+        "大杯"
     ]
 }

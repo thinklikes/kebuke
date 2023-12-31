@@ -13,16 +13,15 @@ struct Order: Codable {
     var size: String = ""
     var sugar: String = ""
     var temperature: String = ""
-    var price: Int = 0
+    var price = 0
     
-    init(user: String, drinkName: String, size: String, sugar: String, temperature: String) {
+    init(user: String, drinkName: String, size: String, sugar: String, temperature: String, price: Int) {
         self.user = user
         self.drink = drinkName
         self.size = size
         self.sugar = sugar
         self.temperature = temperature
-        let drink = findDrink()
-        self.price = drink?.getPriceAmount(size: size) ?? 0
+        self.price = price
     }
 
     init() {

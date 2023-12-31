@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1E970D2B411DBF00BBB64D /* GetOrdersResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E970C2B411DBF00BBB64D /* GetOrdersResponseBody.swift */; };
+		7D1E970F2B413D7000BBB64D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E970E2B413D7000BBB64D /* Record.swift */; };
 		7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33A32B385ACC00DD464A /* AppDelegate.swift */; };
 		7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */; };
 		7D2F33AB2B385ACC00DD464A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F33A92B385ACC00DD464A /* Main.storyboard */; };
@@ -18,7 +20,7 @@
 		7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B197C2B3E64DD00097194 /* Drink.swift */; };
 		7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */; };
 		7D8378AB2B3EC94300D97D58 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378AA2B3EC94300D97D58 /* Order.swift */; };
-		7D8378B32B3FBB5800D97D58 /* CreateOrderBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */; };
+		7D8378B32B3FBB5800D97D58 /* CreateOrderRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378B22B3FBB5800D97D58 /* CreateOrderRequestBody.swift */; };
 		7D9B73E92B40F2D900DD7623 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B73E72B40F2D900DD7623 /* Orders.storyboard */; };
 		7D9B73EB2B40F56E00DD7623 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */; };
 		B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC62B3C542700D5A69B /* LoginViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D1E970C2B411DBF00BBB64D /* GetOrdersResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrdersResponseBody.swift; sourceTree = "<group>"; };
+		7D1E970E2B413D7000BBB64D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		7D2F33A02B385ACC00DD464A /* kebuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kebuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2F33A32B385ACC00DD464A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +58,7 @@
 		7D3B197C2B3E64DD00097194 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDelegate.swift; sourceTree = "<group>"; };
 		7D8378AA2B3EC94300D97D58 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderBody.swift; sourceTree = "<group>"; };
+		7D8378B22B3FBB5800D97D58 /* CreateOrderRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRequestBody.swift; sourceTree = "<group>"; };
 		7D9B73E82B40F2D900DD7623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = kebuke/Base.lproj/Orders.storyboard; sourceTree = "<group>"; };
 		7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		B0180CC62B3C542700D5A69B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1E970B2B411D9300BBB64D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7D8378B22B3FBB5800D97D58 /* CreateOrderRequestBody.swift */,
+				7D1E970C2B411DBF00BBB64D /* GetOrdersResponseBody.swift */,
+				7D1E970E2B413D7000BBB64D /* Record.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		7D2F33972B385ACC00DD464A = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +118,7 @@
 		7D2F33A22B385ACC00DD464A /* kebuke */ = {
 			isa = PBXGroup;
 			children = (
+				7D1E970B2B411D9300BBB64D /* Http */,
 				7D2F33CE2B3976DF00DD464A /* Protocols */,
 				7D2F33CD2B3976CE00DD464A /* Models */,
 				7D2F33C62B39740300DD464A /* Services */,
@@ -140,7 +155,6 @@
 				7D3B19742B3D51F200097194 /* GlobalConfig.swift */,
 				7D3B197C2B3E64DD00097194 /* Drink.swift */,
 				7D8378AA2B3EC94300D97D58 /* Order.swift */,
-				7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,12 +275,14 @@
 				7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */,
 				7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */,
 				7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */,
+				7D1E970D2B411DBF00BBB64D /* GetOrdersResponseBody.swift in Sources */,
 				B04DF2712B4004BA0059AD28 /* ClassicalCollectionViewCell.swift in Sources */,
 				B0180CCD2B3EBABA00D5A69B /* SpecialCollectionViewCell.swift in Sources */,
 				B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
+				7D1E970F2B413D7000BBB64D /* Record.swift in Sources */,
 				B04DF26F2B3FE5570059AD28 /* DrinkViewController.swift in Sources */,
-				7D8378B32B3FBB5800D97D58 /* CreateOrderBody.swift in Sources */,
+				7D8378B32B3FBB5800D97D58 /* CreateOrderRequestBody.swift in Sources */,
 				B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
 				B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */,
