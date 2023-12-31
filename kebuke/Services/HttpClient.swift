@@ -76,8 +76,15 @@ class HttpClient {
 
 extension HttpClient {
     
-    public func getOrders() {
-        get(url: "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?pageSize=20&sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature") { data in
+    public func getOrders(offset: String = "") {
+        var urlString: String = "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?pageSize=20&sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature"
+        
+        // 需翻頁時
+        if (!offset.isEmpty) {
+            urlString = "\(urlString)&offset=\(offset)"
+        }
+        
+        get(url: urlString) { data in
             guard let decoded = try? JSONDecoder().decode(GetOrdersResponseBody.self, from: data!) else { fatalError("can not find records") }
             self.data = decoded as GetOrdersResponseBody
             self.delegate?.httpClient(httpClient: self, GetOrders: 0)
