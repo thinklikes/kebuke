@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -119,6 +120,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qin-oT-ccD">
+            <objects>
+                <viewController id="Oy3-EV-nyx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4X-K4-nU6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ovv-Yt-Pv8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7uo-6X-brC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7C-1E-jpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-820"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="PCH-bo-lHo">
@@ -249,7 +266,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="d77-vY-w4U" kind="show" id="CS4-IE-wgp"/>
+                                    <segue destination="Oy3-EV-nyx" kind="show" id="MnH-Zk-CJq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIP-dA-p85">
@@ -688,16 +705,6 @@
             </objects>
             <point key="canvasLocation" x="1629.7709923664122" y="-2.1126760563380285"/>
         </scene>
-        <!--Orders-->
-        <scene sceneID="QMO-5t-6Qd">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Orders" id="d77-vY-w4U" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="nCX-QJ-UzX"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aHS-Lt-Txh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1324" y="-419"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="r9Z-am-fir"/>
@@ -726,5 +733,8 @@
         <namedColor name="WeakColor">
             <color red="0.98039215686274506" green="0.94509803921568625" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

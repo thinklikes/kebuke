@@ -19,6 +19,8 @@
 		7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */; };
 		7D8378AB2B3EC94300D97D58 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378AA2B3EC94300D97D58 /* Order.swift */; };
 		7D8378B32B3FBB5800D97D58 /* CreateOrderBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */; };
+		7D9B73E92B40F2D900DD7623 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B73E72B40F2D900DD7623 /* Orders.storyboard */; };
+		7D9B73EB2B40F56E00DD7623 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */; };
 		B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC62B3C542700D5A69B /* LoginViewController.swift */; };
 		B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC82B3C727D00D5A69B /* HomeViewController.swift */; };
 		B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */; };
@@ -53,6 +55,8 @@
 		7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDelegate.swift; sourceTree = "<group>"; };
 		7D8378AA2B3EC94300D97D58 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7D8378B22B3FBB5800D97D58 /* CreateOrderBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderBody.swift; sourceTree = "<group>"; };
+		7D9B73E82B40F2D900DD7623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = kebuke/Base.lproj/Orders.storyboard; sourceTree = "<group>"; };
+		7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		B0180CC62B3C542700D5A69B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0180CC82B3C727D00D5A69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
@@ -110,9 +114,11 @@
 				7D2F33A32B385ACC00DD464A /* AppDelegate.swift */,
 				7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */,
 				7D2F33A92B385ACC00DD464A /* Main.storyboard */,
+				7D9B73E72B40F2D900DD7623 /* Orders.storyboard */,
 				B04DF2702B4004BA0059AD28 /* ClassicalCollectionViewCell.swift */,
 				B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */,
 				B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */,
+				7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */,
 				7D2F33AC2B385ACE00DD464A /* Assets.xcassets */,
 				7D2F33AE2B385ACE00DD464A /* LaunchScreen.storyboard */,
 				7D2F33B12B385ACE00DD464A /* Info.plist */,
@@ -231,6 +237,7 @@
 				7D2F33B02B385ACE00DD464A /* LaunchScreen.storyboard in Resources */,
 				7D2F33AD2B385ACE00DD464A /* Assets.xcassets in Resources */,
 				7D2F33AB2B385ACC00DD464A /* Main.storyboard in Resources */,
+				7D9B73E92B40F2D900DD7623 /* Orders.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,7 @@
 				B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */,
 				7D2F33A62B385ACC00DD464A /* SceneDelegate.swift in Sources */,
 				B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */,
+				7D9B73EB2B40F56E00DD7623 /* OrdersViewController.swift in Sources */,
 				B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +308,14 @@
 				7D2F33AF2B385ACE00DD464A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7D9B73E72B40F2D900DD7623 /* Orders.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D9B73E82B40F2D900DD7623 /* Base */,
+			);
+			name = Orders.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
