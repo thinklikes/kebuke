@@ -68,6 +68,9 @@ class DrinkViewController: UIViewController {
             order.temperature = text
         }
     }
+    func updateOrderPrice() {
+        order.price = drink.getPriceAmount(size: order.size)
+    }
     func updateOrderLabel() {
         orderLabel.text = "\(order.user)同學．\(order.drink)．\(order.size)．\(order.sugar)．\(order.temperature)．$\(drink.getPriceAmount(size: order.size))"
     }
@@ -92,6 +95,7 @@ class DrinkViewController: UIViewController {
         updateUIButton(UIButtons: sizeUIButtons, index: selectSizeIndex)
         updateOrderSize()
         updatePriceUI()
+        updateOrderPrice()
         updateOrderLabel()
     }
     
@@ -107,5 +111,8 @@ class DrinkViewController: UIViewController {
         updateUIButton(UIButtons: temperatureUIButtons, index: selectTemperatureIndex)
         updateOrderTemperature()
         updateOrderLabel()
+    }
+    @IBAction func tapSubmitButton(_ sender: Any) {
+        
     }
 }

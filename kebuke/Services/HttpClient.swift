@@ -77,7 +77,7 @@ class HttpClient {
 extension HttpClient {
     
     public func getOrders(offset: String = "") {
-        var urlString: String = "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?pageSize=20&sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature"
+        var urlString: String = "\(GlobalConfig.apiHost)/\(GlobalConfig.apiVersion)/\(GlobalConfig.clientId)/orders?sort[0][field]=drink&sort[1][field]=size&sort[2][field]=sugar&sort[3][field]=temperature"
         
         // 需翻頁時
         if (!offset.isEmpty) {

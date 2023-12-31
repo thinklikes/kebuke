@@ -31,6 +31,7 @@
 		B0180CCF2B3FB5AB00D5A69B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCE2B3FB5AB00D5A69B /* View.swift */; };
 		B04DF26F2B3FE5570059AD28 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */; };
 		B04DF2712B4004BA0059AD28 /* ClassicalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DF2702B4004BA0059AD28 /* ClassicalCollectionViewCell.swift */; };
+		B0D266142B415ECC00908CC2 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D266132B415ECC00908CC2 /* OrderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B0180CCE2B3FB5AB00D5A69B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 		B04DF2702B4004BA0059AD28 /* ClassicalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalCollectionViewCell.swift; sourceTree = "<group>"; };
+		B0D266132B415ECC00908CC2 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				B04DF26E2B3FE5570059AD28 /* DrinkViewController.swift */,
 				B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */,
 				7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */,
+				B0D266132B415ECC00908CC2 /* OrderTableViewCell.swift */,
 				7D2F33AC2B385ACE00DD464A /* Assets.xcassets */,
 				7D2F33AE2B385ACE00DD464A /* LaunchScreen.storyboard */,
 				7D2F33B12B385ACE00DD464A /* Info.plist */,
@@ -283,6 +286,7 @@
 				7D3B197D2B3E64DD00097194 /* Drink.swift in Sources */,
 				7D8378AB2B3EC94300D97D58 /* Order.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
+				B0D266142B415ECC00908CC2 /* OrderTableViewCell.swift in Sources */,
 				7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */,
 				7DC3A5942B4150980072A93F /* PageStatus.swift in Sources */,
 				7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */,

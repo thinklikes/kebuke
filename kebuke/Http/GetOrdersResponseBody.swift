@@ -9,7 +9,4 @@ import Foundation
 
 struct GetOrdersResponseBody: Decodable {
     let records: [Record]
-    
-    // 如果有下一頁, 把這一項帶到 request 中
-    var offset: String = ""
 }

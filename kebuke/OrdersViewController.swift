@@ -10,20 +10,50 @@ import UIKit
 class OrdersViewController: UIViewController {
     var httpClient: HttpClient!
     var orders: [Order] = []
-    var pageStatus: PageStatus = .NotLoadingMore
 
     @IBOutlet weak var orderTableView: UITableView!
+    @IBOutlet weak var countOfOrdersLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var emptyView: UIView! {
+        didSet {
+            drawBlock(view: emptyView)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         httpClient = HttpClient(delegate: self)
+        // 獲取訂單
         getOrders()
-
-        // Do any additional setup after loading the view.
+        if (orders.isEmpty) {
+            emptyView.isHidden = false
+        } else {
+            emptyView.isHidden = true
+        }
     }
-    
+
     func getOrders(offset: String = "") {
         httpClient.getOrders(offset: offset)
+    }
+
+    func updateCountOfOrdersLabel(count: Int) {
+        var realValue = count
+
+        if (realValue < 0) {
+            realValue = 0
+        }
+
+        countOfOrdersLabel.text = String(realValue)
+    }
+
+    func updateTotalAmountLabel(amount: Int) {
+        var realValue = amount
+
+        if (realValue < 0) {
+            realValue = 0
+        }
+
+        totalAmountLabel.text = "$" + String(realValue)
     }
 
     /*
@@ -48,54 +78,39 @@ extension OrdersViewController: UITableViewDataSource, UITableViewDelegate {
         // #warning Incomplete implementation, return the number of rows
         return orders.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(OrderTableViewCell.self)", for: indexPath) as! OrderTableViewCell
 
         if (orders.isEmpty) {
             return cell
         }
         let order = orders[indexPath.row]
 
-        cell.textLabel?.text = order.user
-        cell.detailTextLabel?.text = "\(order.drink) \(order.size) \(order.sugar) \(order.temperature) \(order.price)"
+        cell.orderIconLabel.text = String(order.user.first!).uppercased()
+        cell.orderUserLabel.text = "\(order.user)"
+        cell.orderDrinkLabel.text = "\(order.drink)"
+        cell.orderDescriptionLabel.text = "\(order.size)．\(order.sugar)．\(order.temperature)"
+        cell.orderPriceLabel.text = "$\(order.price)"
         
         return cell
     }
 }
 
-//extension OrdersViewController: UIScrollViewDelegate {
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        guard scrollView.contentSize.height > self.tableView.frame.height, self.pageStatus == .NotLoadingMore else { return }
-//        
-//        if scrollView.contentSize.height - (scrollView.frame.size.height + scrollView.contentOffset.y) <= -10 {
-//                        
-//            self.pageStatus = .LoadingMore
-//            self.tableView.reloadData {
-//                // 模擬 Call API 的時間
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//                    self.dataList += Array(repeating: "", count: 6)
-//                    self.pageStatus = .NotLoadingMore
-//                    self.tableView.reloadData()
-//                }
-//            }
-//            
-//        }
-//
-//    }
-//}
-
 extension OrdersViewController: HttpDelegate {
     func httpClient(httpClient: HttpClient, GetOrders section: Int) {
 
         let data: GetOrdersResponseBody = httpClient.data as! GetOrdersResponseBody
-        
+
         DispatchQueue.main.async {
+            var totalAmount = 0
             for record in data.records {
                 self.orders.append(record.fields)
+                totalAmount += record.fields.price
             }
-
             self.orderTableView.reloadData()
+            self.updateCountOfOrdersLabel(count: self.orders.count)
+            self.updateTotalAmountLabel(amount: totalAmount)
         }
     }
 }
