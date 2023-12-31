@@ -23,6 +23,7 @@
 		7D8378B32B3FBB5800D97D58 /* CreateOrderRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8378B22B3FBB5800D97D58 /* CreateOrderRequestBody.swift */; };
 		7D9B73E92B40F2D900DD7623 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B73E72B40F2D900DD7623 /* Orders.storyboard */; };
 		7D9B73EB2B40F56E00DD7623 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */; };
+		7DC3A5942B4150980072A93F /* PageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3A5932B4150980072A93F /* PageStatus.swift */; };
 		B0180CC72B3C542700D5A69B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC62B3C542700D5A69B /* LoginViewController.swift */; };
 		B0180CC92B3C727D00D5A69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CC82B3C727D00D5A69B /* HomeViewController.swift */; };
 		B0180CCB2B3E7E8500D5A69B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */; };
@@ -61,6 +62,7 @@
 		7D8378B22B3FBB5800D97D58 /* CreateOrderRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRequestBody.swift; sourceTree = "<group>"; };
 		7D9B73E82B40F2D900DD7623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = kebuke/Base.lproj/Orders.storyboard; sourceTree = "<group>"; };
 		7D9B73EA2B40F56E00DD7623 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		7DC3A5932B4150980072A93F /* PageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageStatus.swift; sourceTree = "<group>"; };
 		B0180CC62B3C542700D5A69B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0180CC82B3C727D00D5A69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0180CCA2B3E7E8500D5A69B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		7D2F33A22B385ACC00DD464A /* kebuke */ = {
 			isa = PBXGroup;
 			children = (
+				7DC3A5922B4150850072A93F /* Enum */,
 				7D1E970B2B411D9300BBB64D /* Http */,
 				7D2F33CE2B3976DF00DD464A /* Protocols */,
 				7D2F33CD2B3976CE00DD464A /* Models */,
@@ -165,6 +168,14 @@
 				7D6193702B3C650200CEE5E4 /* HttpDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7DC3A5922B4150850072A93F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				7DC3A5932B4150980072A93F /* PageStatus.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				7D8378AB2B3EC94300D97D58 /* Order.swift in Sources */,
 				7D2F33A42B385ACC00DD464A /* AppDelegate.swift in Sources */,
 				7D2F33C82B39741D00DD464A /* HttpClient.swift in Sources */,
+				7DC3A5942B4150980072A93F /* PageStatus.swift in Sources */,
 				7D3B19752B3D51F200097194 /* GlobalConfig.swift in Sources */,
 				7D6193712B3C650200CEE5E4 /* HttpDelegate.swift in Sources */,
 				7D1E970D2B411DBF00BBB64D /* GetOrdersResponseBody.swift in Sources */,
