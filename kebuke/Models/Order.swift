@@ -8,11 +8,11 @@
 import Foundation
 
 struct Order: Codable {
-    let user: String
-    let drink: String
-    let size: String
-    let sugar: String
-    let temperature: String
+    var user: String = ""
+    var drink: String = ""
+    var size: String = ""
+    var sugar: String = ""
+    var temperature: String = ""
     var price: Int = 0
     
     init(user: String, drinkName: String, size: String, sugar: String, temperature: String) {
@@ -21,9 +21,11 @@ struct Order: Codable {
         self.size = size
         self.sugar = sugar
         self.temperature = temperature
-        var drink = findDrink()
+        let drink = findDrink()
         self.price = drink?.getPriceAmount(size: size) ?? 0
+    }
 
+    init() {
     }
     
     func findDrink() -> Drink? {
