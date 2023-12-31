@@ -58,8 +58,8 @@ struct GlobalConfig {
     static var temperatureOptions: [String] = [
         "正常冰",
         "少冰",
-        "去冰",
         "微冰",
+        "去冰",
         "完全去冰",
         "常溫",
         "溫",

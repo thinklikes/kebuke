@@ -44,6 +44,8 @@ class HomeViewController: UIViewController {
            let text = title.text {
             selectClassicalTitle = text
             classicalCollectionView.reloadData()
+            // 把 scroll 捲到一開頭的地方
+            classicalCollectionView.setContentOffset(.zero, animated: false)
         }
         updateClassicalUIButton()
     }
@@ -91,6 +93,7 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ClassicalCollectionViewCell.self)", for: indexPath) as! ClassicalCollectionViewCell
+            
             if let drinks = GlobalConfig.drinks[selectClassicalTitle] {
                 cell.imageView.image = drinks[indexPath.row].image()
                 cell.titleLabel.text = drinks[indexPath.row].name
