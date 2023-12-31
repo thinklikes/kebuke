@@ -21,8 +21,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var specialCollectionView: UICollectionView!
     @IBOutlet weak var classicalCollectionView: UICollectionView!
-
-
     @IBOutlet var classicalUIButtons: [UIButton]!
 
     func updateClassicalUIButton () {
@@ -30,6 +28,18 @@ class HomeViewController: UIViewController {
             button.configuration?.baseBackgroundColor = UIColor.strong
         }
         classicalUIButtons[selectClassicalIndex].configuration?.baseBackgroundColor = UIColor.accent
+    }
+    func updateClassicalCollectionView () {
+        if let title = classicalUIButtons[selectClassicalIndex].titleLabel,
+           let text = title.text {
+            selectClassicalTitle = text
+            updateClassicalCollectionViewData()
+        }
+    }
+    func updateClassicalCollectionViewData() {
+        classicalCollectionView.reloadData()
+        // 把 scroll 捲到一開頭的地方
+        classicalCollectionView.setContentOffset(.zero, animated: false)
     }
 
     override func viewDidLoad() {
@@ -40,30 +50,24 @@ class HomeViewController: UIViewController {
 
     @IBAction func tapClassicalUIButtons(_ sender: UIButton) {
         selectClassicalIndex = classicalUIButtons.firstIndex(of: sender)!
-        if let title = classicalUIButtons[selectClassicalIndex].titleLabel,
-           let text = title.text {
-            selectClassicalTitle = text
-            classicalCollectionView.reloadData()
-            // 把 scroll 捲到一開頭的地方
-            classicalCollectionView.setContentOffset(.zero, animated: false)
-        }
         updateClassicalUIButton()
+        updateClassicalCollectionView()
     }
-    
-    
+
     @IBSegueAction func chooseDrink(_ coder: NSCoder, sender: Any?, segueIdentifier: String?) -> DrinkViewController? {
         let controller = DrinkViewController(coder: coder)
         if (segueIdentifier == "special") {
             if let item = specialCollectionView.indexPathsForSelectedItems?.first?.item {
+                controller?.user = user
                 controller?.drink = GlobalConfig.drinks["季節限定"]?[item]
                 return controller
-                
             }
-        } else if (segueIdentifier == "classical") {
+        }
+        if (segueIdentifier == "classical") {
             if let item = classicalCollectionView.indexPathsForSelectedItems?.first?.item {
+                controller?.user = user
                 controller?.drink = GlobalConfig.drinks[selectClassicalTitle]?[item]
                 return controller
-                
             }
         }
         return nil
@@ -81,7 +85,6 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         switch collectionView {
         case specialCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(SpecialCollectionViewCell.self)", for: indexPath) as! SpecialCollectionViewCell
@@ -93,7 +96,6 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ClassicalCollectionViewCell.self)", for: indexPath) as! ClassicalCollectionViewCell
-            
             if let drinks = GlobalConfig.drinks[selectClassicalTitle] {
                 cell.imageView.image = drinks[indexPath.row].image()
                 cell.titleLabel.text = drinks[indexPath.row].name
