@@ -63,7 +63,7 @@ extension LoginViewController: UITextFieldDelegate {
             return false
         }
         // 用來判斷文字長度的 range
-        let characterRange = 2...8
+        let characterRange = 2...6
 
         // 判斷是否有特殊符號的正規表達式
         let pattern = "[^a-zA-Z\\u4e00-\\u9fa5]+"
