@@ -120,7 +120,11 @@ class DrinkViewController: UIViewController {
         let httpClient = HttpClient(delegate: self)
         let order: Order = order
         httpClient.createOrder(order: order)
+        let alertController = UIAlertController(title: "成功", message: "訂單已送出", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "回首頁", style: .default))
+        present(alertController, animated: true)
     }
+    
 }
 
 extension DrinkViewController: HttpDelegate {

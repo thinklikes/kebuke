@@ -437,7 +437,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tapSubmitButton:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="MdW-2v-Hf4"/>
+                                    <action selector="tapSubmitButton:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="fNX-Kz-MFt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="同學．朱玉歐蕾．中杯．七分糖．少冰．$70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzT-zz-kxU">
@@ -771,7 +771,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHS-Lt-Txh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403" y="-425"/>
+            <point key="canvasLocation" x="867" y="432"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
