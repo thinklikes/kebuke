@@ -113,6 +113,14 @@ class DrinkViewController: UIViewController {
         updateOrderLabel()
     }
     @IBAction func tapSubmitButton(_ sender: Any) {
-        
+        let httpClient = HttpClient(delegate: self)
+        let order: Order = order
+        httpClient.createOrder(order: order)
+    }
+}
+
+extension DrinkViewController: HttpDelegate {
+    func httpClient(httpClient: HttpClient, CreateOrder section: Int) {
+
     }
 }

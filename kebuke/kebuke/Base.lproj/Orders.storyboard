@@ -160,6 +160,18 @@
                                 </subviews>
                                 <color key="backgroundColor" name="StrongColor"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6R-Om-t8G">
+                                <rect key="frame" x="16" y="71" width="361" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="rays" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-At-q5M">
+                                        <rect key="frame" x="170" y="28" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="StrongColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ovv-Yt-Pv8"/>
                         <color key="backgroundColor" name="ThemeColor"/>
@@ -168,7 +180,9 @@
                     <connections>
                         <outlet property="countOfOrdersLabel" destination="fac-JA-24D" id="G6B-ID-T9o"/>
                         <outlet property="emptyView" destination="5lm-bY-Cjw" id="jJg-dY-VPR"/>
+                        <outlet property="loadingSymble" destination="8ZV-At-q5M" id="7f9-Ka-9oT"/>
                         <outlet property="orderTableView" destination="Cws-oi-n7y" id="w46-Yf-exj"/>
+                        <outlet property="statusView" destination="B6R-Om-t8G" id="lpG-m0-hWG"/>
                         <outlet property="totalAmountLabel" destination="RvP-m0-pnv" id="G9W-rT-trz"/>
                     </connections>
                 </viewController>
@@ -179,6 +193,7 @@
     </scenes>
     <resources>
         <image name="order-bg" width="1920" height="780"/>
+        <image name="rays" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.73725490196078436" green="0.58431372549019611" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -53,7 +53,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PR-sn-PGQ">
                                         <rect key="frame" x="0.0" y="0.0" width="188" height="48"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名字" adjustsFontSizeToFit="NO" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="4i4-pT-hNd" customClass="TextFieldWithPadding" customModule="kebuke" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名稱" adjustsFontSizeToFit="NO" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="4i4-pT-hNd" customClass="TextFieldWithPadding" customModule="kebuke" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="48"/>
                                                 <color key="backgroundColor" name="WeakColor"/>
                                                 <constraints>
@@ -310,44 +310,44 @@
                                 <rect key="frame" x="0.0" y="617" width="393" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Pnm-tS-m3H">
-                                    <size key="itemSize" width="131" height="175"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Pnm-tS-m3H">
+                                    <size key="itemSize" width="112" height="175"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClassicalCollectionViewCell" id="mjg-eu-EQW" customClass="ClassicalCollectionViewCell" customModule="kebuke" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="175"/>
+                                        <rect key="frame" x="16" y="1.6666666666666667" width="112" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Yao-ys-xwk">
-                                            <rect key="frame" x="0.0" y="0.0" width="131" height="175"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="112" height="172"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OSd-eM-9qt">
-                                                    <rect key="frame" x="16" y="0.0" width="115" height="175"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="172"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink-template" translatesAutoresizingMaskIntoConstraints="NO" id="8rB-ha-he7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="立即品嚐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-M1-mdV">
-                                                            <rect key="frame" x="8" y="146" width="47" height="21"/>
+                                                            <rect key="frame" x="8" y="143" width="47" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="朱玉歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-tw-I1P">
-                                                            <rect key="frame" x="8" y="124" width="107" height="21"/>
+                                                            <rect key="frame" x="8" y="121" width="104" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-Wv-61e">
-                                                            <rect key="frame" x="55" y="150" width="16" height="12.666666666666686"/>
+                                                            <rect key="frame" x="55" y="147" width="16" height="12.666666666666666"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
@@ -359,7 +359,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="131" height="175"/>
+                                        <size key="customSize" width="112" height="172"/>
                                         <connections>
                                             <outlet property="imageView" destination="8rB-ha-he7" id="YBg-Tk-isD"/>
                                             <outlet property="titleLabel" destination="2b1-tw-I1P" id="jcl-4V-8Zr"/>
@@ -761,7 +761,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDH-Dd-C6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1629.7709923664122" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1648" y="-2"/>
         </scene>
         <!--Orders-->
         <scene sceneID="QMO-5t-6Qd">
@@ -771,7 +771,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHS-Lt-Txh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="-419"/>
+            <point key="canvasLocation" x="1403" y="-425"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -10,6 +10,9 @@ import UIKit
 class OrdersViewController: UIViewController {
     var httpClient: HttpClient!
     var orders: [Order] = []
+    
+    var percent: Double = 0
+    var timer: Timer?
 
     @IBOutlet weak var orderTableView: UITableView!
     @IBOutlet weak var countOfOrdersLabel: UILabel!
@@ -19,17 +22,28 @@ class OrdersViewController: UIViewController {
             drawBlock(view: emptyView)
         }
     }
-    
+    @IBOutlet weak var statusView: UIView! {
+        didSet {
+            drawBlock(view: statusView)
+        }
+    }
+    @IBOutlet weak var loadingSymble: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { [self] _ in
+            percent += 1.0 / 8.0
+            if percent > 1 {
+                percent = 0
+            }
+            loadingSymble.image = UIImage(systemName: "rays", variableValue: percent)
+        }
+
         httpClient = HttpClient(delegate: self)
+        
         // 獲取訂單
         getOrders()
-        if (orders.isEmpty) {
-            emptyView.isHidden = false
-        } else {
-            emptyView.isHidden = true
-        }
     }
 
     func getOrders(offset: String = "") {
@@ -111,6 +125,13 @@ extension OrdersViewController: HttpDelegate {
             self.orderTableView.reloadData()
             self.updateCountOfOrdersLabel(count: self.orders.count)
             self.updateTotalAmountLabel(amount: totalAmount)
+
+            self.statusView.isHidden = true
+            if (self.orders.isEmpty) {
+                self.emptyView.isHidden = false
+            } else {
+                self.emptyView.isHidden = true
+            }
         }
     }
 }
