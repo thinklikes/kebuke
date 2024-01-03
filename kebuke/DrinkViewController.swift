@@ -12,6 +12,9 @@ class DrinkViewController: UIViewController {
     var user: String!
     var drink: Drink!
     var order: Order = Order()
+
+    var percent: Double = 0
+    var timer: Timer?
     
     var selectSizeIndex: Int = 0
     var selectSugarIndex: Int = 0
@@ -27,6 +30,7 @@ class DrinkViewController: UIViewController {
     @IBOutlet var temperatureUIButtons: [UIButton]!
 
     @IBOutlet weak var orderLabel: UILabel!
+    @IBOutlet weak var submitButton: UIButton!
 
     func updateUI() {
         drinkImage.image = drink.image()
@@ -116,10 +120,19 @@ class DrinkViewController: UIViewController {
         updateOrderTemperature()
         updateOrderLabel()
     }
+
     @IBAction func tapSubmitButton(_ sender: Any) {
         let httpClient = HttpClient(delegate: self)
         let order: Order = order
         httpClient.createOrder(order: order)
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { [self] _ in
+            percent += 1.0 / 8.0
+            if percent > 1 {
+                percent = 0
+            }
+            submitButton.imageView?.image = UIImage(systemName: "rays", variableValue: percent)
+        }
     }
     
 }
@@ -128,11 +141,14 @@ extension DrinkViewController: HttpDelegate {
     func httpClient(httpClient: HttpClient, CreateOrder section: Int) {
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: "成功", message: "訂單已送出", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "回首頁", style: .default) {_ in 
+            alertController.view.tintColor = UIColor.accent
+            alertController.addAction(UIAlertAction(title: "回首頁", style: .default) {_ in
                 self.dismiss(animated: true)
             })
-
             self.present(alertController, animated: true)
+            self.timer?.invalidate()
+            self.timer = nil
+            self.submitButton.imageView?.image = UIImage(systemName: "bag")
         }
     }
 }
