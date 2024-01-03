@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		7D1E970C2B411DBF00BBB64D /* GetOrdersResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOrdersResponseBody.swift; sourceTree = "<group>"; };
 		7D1E970E2B413D7000BBB64D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
-		7D2F33A02B385ACC00DD464A /* kebuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kebuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2F33A02B385ACC00DD464A /* Kebuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kebuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2F33A32B385ACC00DD464A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2F33A52B385ACC00DD464A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D2F33AA2B385ACC00DD464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		7D2F33A12B385ACC00DD464A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D2F33A02B385ACC00DD464A /* kebuke.app */,
+				7D2F33A02B385ACC00DD464A /* Kebuke.app */,
 				7D2F33BD2B396FA300DD464A /* kebukeTests.xctest */,
 			);
 			name = Products;
@@ -184,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D2F339F2B385ACC00DD464A /* kebuke */ = {
+		7D2F339F2B385ACC00DD464A /* Kebuke */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D2F33B42B385ACE00DD464A /* Build configuration list for PBXNativeTarget "kebuke" */;
+			buildConfigurationList = 7D2F33B42B385ACE00DD464A /* Build configuration list for PBXNativeTarget "Kebuke" */;
 			buildPhases = (
 				7D2F339C2B385ACC00DD464A /* Sources */,
 				7D2F339D2B385ACC00DD464A /* Frameworks */,
@@ -196,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = kebuke;
+			name = Kebuke;
 			productName = kebuke;
-			productReference = 7D2F33A02B385ACC00DD464A /* kebuke.app */;
+			productReference = 7D2F33A02B385ACC00DD464A /* Kebuke.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7D2F33BC2B396FA300DD464A /* kebukeTests */ = {
@@ -251,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D2F339F2B385ACC00DD464A /* kebuke */,
+				7D2F339F2B385ACC00DD464A /* Kebuke */,
 				7D2F33BC2B396FA300DD464A /* kebukeTests */,
 			);
 		};
@@ -320,7 +320,7 @@
 /* Begin PBXTargetDependency section */
 		7D2F33C22B396FA300DD464A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D2F339F2B385ACC00DD464A /* kebuke */;
+			target = 7D2F339F2B385ACC00DD464A /* Kebuke */;
 			targetProxy = 7D2F33C12B396FA300DD464A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D2F33B42B385ACE00DD464A /* Build configuration list for PBXNativeTarget "kebuke" */ = {
+		7D2F33B42B385ACE00DD464A /* Build configuration list for PBXNativeTarget "Kebuke" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D2F33B52B385ACE00DD464A /* Debug */,
