@@ -31,6 +31,9 @@ class HttpClient {
             var request = URLRequest(url: url)
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
             
+            // 印出 request url
+            print(url)
+            
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data else {
                     print(String(describing: error))
@@ -57,7 +60,6 @@ class HttpClient {
             if let data,
                let content = String(data: data, encoding: .utf8) {
                 print(url)
-                print(token)
                 print(content)
             }
             

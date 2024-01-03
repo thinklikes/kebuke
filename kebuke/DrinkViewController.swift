@@ -47,6 +47,7 @@ class DrinkViewController: UIViewController {
     }
     func updateOrder() {
         updateOrderSize()
+        updateOrderPrice()
         updateOrderSugar()
         updateOrderTemperature()
     }
@@ -54,6 +55,12 @@ class DrinkViewController: UIViewController {
         if let title = sizeUIButtons[selectSizeIndex].titleLabel,
            let text = title.text {
             order.size = text
+        }
+    }
+    func updateOrderPrice() {
+        if let title = sizeUIButtons[selectSizeIndex].titleLabel,
+           let text = title.text {
+            order.price = drink.getPriceAmount(size: text)
         }
     }
     func updateOrderSugar() {
@@ -67,9 +74,6 @@ class DrinkViewController: UIViewController {
            let text = title.text {
             order.temperature = text
         }
-    }
-    func updateOrderPrice() {
-        order.price = drink.getPriceAmount(size: order.size)
     }
     func updateOrderLabel() {
         orderLabel.text = "\(order.user)同學．\(order.drink)．\(order.size)．\(order.sugar)．\(order.temperature)．$\(drink.getPriceAmount(size: order.size))"
@@ -94,8 +98,8 @@ class DrinkViewController: UIViewController {
         selectSizeIndex = sizeUIButtons.firstIndex(of: sender)!
         updateUIButton(UIButtons: sizeUIButtons, index: selectSizeIndex)
         updateOrderSize()
-        updatePriceUI()
         updateOrderPrice()
+        updatePriceUI()
         updateOrderLabel()
     }
     

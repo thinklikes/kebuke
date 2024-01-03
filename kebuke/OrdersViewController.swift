@@ -51,20 +51,22 @@ class OrdersViewController: UIViewController {
     }
 
     func updateCountOfOrdersLabel(count: Int) {
-        var realValue = count
+        let realValue = count
 
-        if (realValue < 0) {
-            realValue = 0
+        if (realValue <= 0) {
+            countOfOrdersLabel.text = "--"
+            return
         }
 
         countOfOrdersLabel.text = String(realValue)
     }
 
     func updateTotalAmountLabel(amount: Int) {
-        var realValue = amount
+        let realValue = amount
 
-        if (realValue < 0) {
-            realValue = 0
+        if (realValue <= 0) {
+            totalAmountLabel.text = "$---"
+            return
         }
 
         totalAmountLabel.text = "$" + String(realValue)
