@@ -120,20 +120,19 @@ class DrinkViewController: UIViewController {
         let httpClient = HttpClient(delegate: self)
         let order: Order = order
         httpClient.createOrder(order: order)
-        
-        let presentingViewController = self.presentingViewController
-        dismiss(animated: true) {
-            presentingViewController?.performSegue(withIdentifier: "showOrders", sender: nil)
-        }
-        let alertController = UIAlertController(title: "成功", message: "訂單已送出", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "回首頁", style: .default))
-        present(alertController, animated: true)
     }
     
 }
 
 extension DrinkViewController: HttpDelegate {
     func httpClient(httpClient: HttpClient, CreateOrder section: Int) {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "成功", message: "訂單已送出", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "回首頁", style: .default) {_ in 
+                self.dismiss(animated: true)
+            })
 
+            self.present(alertController, animated: true)
+        }
     }
 }
