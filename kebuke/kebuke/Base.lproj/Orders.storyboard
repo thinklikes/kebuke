@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="order-bg" translatesAutoresizingMaskIntoConstraints="NO" id="CLa-sK-auF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order-bg" translatesAutoresizingMaskIntoConstraints="NO" id="CLa-sK-auF">
                                 <rect key="frame" x="0.0" y="321" width="393" height="531"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CLa-sK-auF" secondAttribute="height" multiplier="131:177" id="MtI-S2-KY1"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="團購明細" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bot-mx-jyz">
                                 <rect key="frame" x="16" y="34" width="361" height="15.666666666666664"/>
@@ -27,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="84" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cws-oi-n7y">
-                                <rect key="frame" x="0.0" y="87" width="393" height="579.66666666666663"/>
+                                <rect key="frame" x="0.0" y="71" width="393" height="595.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -224,7 +226,7 @@
                             <constraint firstItem="yi7-0i-vfe" firstAttribute="leading" secondItem="ovv-Yt-Pv8" secondAttribute="leading" constant="16" id="8ot-86-iDz"/>
                             <constraint firstItem="ovv-Yt-Pv8" firstAttribute="trailing" secondItem="yi7-0i-vfe" secondAttribute="trailing" constant="16" id="GVh-4P-t5z"/>
                             <constraint firstItem="yi7-0i-vfe" firstAttribute="top" secondItem="Cws-oi-n7y" secondAttribute="bottom" constant="20.670000000000002" id="HLG-5Q-WCZ"/>
-                            <constraint firstItem="Cws-oi-n7y" firstAttribute="top" secondItem="ovv-Yt-Pv8" secondAttribute="top" constant="28" id="Ix1-gv-MGr"/>
+                            <constraint firstItem="Cws-oi-n7y" firstAttribute="top" secondItem="bot-mx-jyz" secondAttribute="top" constant="37" id="Ix1-gv-MGr"/>
                             <constraint firstItem="ovv-Yt-Pv8" firstAttribute="bottom" secondItem="yi7-0i-vfe" secondAttribute="bottom" multiplier="1.1" id="OmU-C2-bZs"/>
                             <constraint firstItem="5lm-bY-Cjw" firstAttribute="leading" secondItem="ovv-Yt-Pv8" secondAttribute="leading" constant="16" id="Ot4-MA-Mby"/>
                             <constraint firstItem="bot-mx-jyz" firstAttribute="top" secondItem="V4X-K4-nU6" secondAttribute="top" constant="34" id="Q8t-eh-hCQ"/>
@@ -233,7 +235,10 @@
                             <constraint firstItem="ovv-Yt-Pv8" firstAttribute="trailing" secondItem="B6R-Om-t8G" secondAttribute="trailing" constant="16" id="ebY-wD-oAQ"/>
                             <constraint firstItem="bot-mx-jyz" firstAttribute="leading" secondItem="V4X-K4-nU6" secondAttribute="leading" constant="16" id="fPu-C2-wVQ"/>
                             <constraint firstItem="ovv-Yt-Pv8" firstAttribute="trailing" secondItem="5lm-bY-Cjw" secondAttribute="trailing" constant="16" id="fcS-fq-2Y7"/>
+                            <constraint firstItem="CLa-sK-auF" firstAttribute="leading" secondItem="ovv-Yt-Pv8" secondAttribute="leading" id="gHb-WF-8x1"/>
                             <constraint firstItem="Cws-oi-n7y" firstAttribute="trailing" secondItem="ovv-Yt-Pv8" secondAttribute="trailing" id="gvf-wZ-nCH"/>
+                            <constraint firstItem="CLa-sK-auF" firstAttribute="trailing" secondItem="ovv-Yt-Pv8" secondAttribute="trailing" id="hqg-xj-Hsx"/>
+                            <constraint firstAttribute="bottom" secondItem="CLa-sK-auF" secondAttribute="bottom" id="qON-lx-oLh"/>
                             <constraint firstItem="B6R-Om-t8G" firstAttribute="top" secondItem="bot-mx-jyz" secondAttribute="top" constant="37" id="sbL-zP-VhH"/>
                             <constraint firstAttribute="trailing" secondItem="bot-mx-jyz" secondAttribute="trailing" constant="16" id="v6M-Ae-Uob"/>
                         </constraints>
