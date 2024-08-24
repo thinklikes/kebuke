@@ -979,23 +979,23 @@
                         <outlet property="drinkPrice" destination="vBX-Ph-bmq" id="nAF-jM-Kp5"/>
                         <outlet property="orderLabel" destination="rzT-zz-kxU" id="OjN-ya-GGB"/>
                         <outlet property="submitButton" destination="tSv-KI-FKh" id="U2J-no-FVj"/>
-                        <outletCollection property="sizeUIButtons" destination="55A-PC-mBx" collectionClass="NSMutableArray" id="HXG-Ll-6Hv"/>
                         <outletCollection property="sizeUIButtons" destination="2RC-bP-GXR" collectionClass="NSMutableArray" id="sds-2K-hAZ"/>
-                        <outletCollection property="sugarUIButtons" destination="KnU-er-Ttq" collectionClass="NSMutableArray" id="qWX-T6-tGj"/>
-                        <outletCollection property="sugarUIButtons" destination="4F8-0R-fS4" collectionClass="NSMutableArray" id="qcL-B8-xde"/>
-                        <outletCollection property="sugarUIButtons" destination="F5L-fp-Hdc" collectionClass="NSMutableArray" id="XdX-de-xXp"/>
-                        <outletCollection property="sugarUIButtons" destination="vxm-ZE-JcE" collectionClass="NSMutableArray" id="xFT-Fh-EI6"/>
-                        <outletCollection property="sugarUIButtons" destination="2uW-os-oNS" collectionClass="NSMutableArray" id="2iT-1Q-q6Q"/>
-                        <outletCollection property="sugarUIButtons" destination="lQM-y3-6vL" collectionClass="NSMutableArray" id="gvK-x5-8fr"/>
                         <outletCollection property="sugarUIButtons" destination="CDQ-B7-f2q" collectionClass="NSMutableArray" id="b8m-qf-c8X"/>
-                        <outletCollection property="temperatureUIButtons" destination="SW0-4d-of8" collectionClass="NSMutableArray" id="to6-KQ-8wg"/>
-                        <outletCollection property="temperatureUIButtons" destination="iZk-9J-VRD" collectionClass="NSMutableArray" id="nhP-cF-aah"/>
-                        <outletCollection property="temperatureUIButtons" destination="vUU-tL-bqg" collectionClass="NSMutableArray" id="JCm-GX-7Vq"/>
-                        <outletCollection property="temperatureUIButtons" destination="wEp-CW-te6" collectionClass="NSMutableArray" id="wii-nu-KZX"/>
-                        <outletCollection property="temperatureUIButtons" destination="pXn-lY-9O1" collectionClass="NSMutableArray" id="8ex-na-ol8"/>
-                        <outletCollection property="temperatureUIButtons" destination="FUW-tu-t6l" collectionClass="NSMutableArray" id="KsX-wX-IMB"/>
-                        <outletCollection property="temperatureUIButtons" destination="TTZ-UX-XNv" collectionClass="NSMutableArray" id="ymx-AI-H49"/>
                         <outletCollection property="temperatureUIButtons" destination="S1Z-iL-3vz" collectionClass="NSMutableArray" id="e0x-nQ-9qs"/>
+                        <outletCollection property="sizeUIButtons" destination="55A-PC-mBx" collectionClass="NSMutableArray" id="3XN-3w-Wqy"/>
+                        <outletCollection property="sugarUIButtons" destination="lQM-y3-6vL" collectionClass="NSMutableArray" id="aK4-5S-dSa"/>
+                        <outletCollection property="sugarUIButtons" destination="4F8-0R-fS4" collectionClass="NSMutableArray" id="jKC-il-Ioo"/>
+                        <outletCollection property="sugarUIButtons" destination="KnU-er-Ttq" collectionClass="NSMutableArray" id="j4c-7c-Wq4"/>
+                        <outletCollection property="sugarUIButtons" destination="F5L-fp-Hdc" collectionClass="NSMutableArray" id="X1R-Z4-baQ"/>
+                        <outletCollection property="sugarUIButtons" destination="2uW-os-oNS" collectionClass="NSMutableArray" id="dYt-Nc-A0a"/>
+                        <outletCollection property="sugarUIButtons" destination="vxm-ZE-JcE" collectionClass="NSMutableArray" id="NWR-OH-g4M"/>
+                        <outletCollection property="temperatureUIButtons" destination="vUU-tL-bqg" collectionClass="NSMutableArray" id="uNB-zr-pfn"/>
+                        <outletCollection property="temperatureUIButtons" destination="iZk-9J-VRD" collectionClass="NSMutableArray" id="mcH-Tz-jVp"/>
+                        <outletCollection property="temperatureUIButtons" destination="pXn-lY-9O1" collectionClass="NSMutableArray" id="JKo-Xk-kYV"/>
+                        <outletCollection property="temperatureUIButtons" destination="wEp-CW-te6" collectionClass="NSMutableArray" id="6ka-vh-agf"/>
+                        <outletCollection property="temperatureUIButtons" destination="SW0-4d-of8" collectionClass="NSMutableArray" id="TqO-RC-7CJ"/>
+                        <outletCollection property="temperatureUIButtons" destination="TTZ-UX-XNv" collectionClass="NSMutableArray" id="AE2-jU-UY1"/>
+                        <outletCollection property="temperatureUIButtons" destination="FUW-tu-t6l" collectionClass="NSMutableArray" id="Iwi-O4-GXm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDH-Dd-C6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
