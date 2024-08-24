@@ -46,6 +46,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         greetingLabel.text = "哈囉！\(String(user!))～作伙乎乾 :D"
         updateClassicalUIButton()
+        configureSpecialCellSize()
     }
 
     @IBAction func tapClassicalUIButtons(_ sender: UIButton) {
@@ -71,6 +72,20 @@ class HomeViewController: UIViewController {
             }
         }
         return nil
+    }
+    func configureSpecialCellSize() {
+        let itemSpace: Double = 0
+        let flowLayout = specialCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        
+        // 重新計算 cell 的大小
+        let width = UIScreen.main.bounds.width
+        let height = floor(width / 393 * 313)
+        
+        flowLayout?.itemSize = CGSize(width: width, height: height)
+        flowLayout?.estimatedItemSize = .zero
+        flowLayout?.minimumInteritemSpacing = itemSpace
+        flowLayout?.minimumLineSpacing = itemSpace
+            
     }
 }
 
