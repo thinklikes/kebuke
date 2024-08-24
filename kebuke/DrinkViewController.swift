@@ -80,7 +80,7 @@ class DrinkViewController: UIViewController {
         }
     }
     func updateOrderLabel() {
-        orderLabel.text = "\(order.user)同學．\(order.drink)．\(order.size)．\(order.sugar)．\(order.temperature)．$\(drink.getPriceAmount(size: order.size))"
+        orderLabel.text = "\(order.user)．\(order.drink)．\(order.size)．\(order.sugar)．\(order.temperature)．$\(drink.getPriceAmount(size: order.size))"
     }
 
     override func viewDidLoad() {
