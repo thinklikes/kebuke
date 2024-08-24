@@ -35,7 +35,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-bg" translatesAutoresizingMaskIntoConstraints="NO" id="bTP-80-N4O">
-                                <rect key="frame" x="0.0" y="582" width="393" height="270"/>
+                                <rect key="frame" x="0.0" y="582" width="393" height="1450"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bTP-80-N4O" secondAttribute="height" multiplier="2130:1463" id="x5d-2S-qj0"/>
                                 </constraints>
@@ -515,10 +515,10 @@
                         <outlet property="greetingLabel" destination="WKe-nj-elm" id="DWr-Ep-gQa"/>
                         <outlet property="headerUIView" destination="iNl-Qf-dae" id="qgF-nz-dwM"/>
                         <outlet property="specialCollectionView" destination="JUX-0b-kaD" id="yVA-xZ-aXJ"/>
-                        <outletCollection property="classicalUIButtons" destination="pS4-wT-UEA" collectionClass="NSMutableArray" id="asX-5i-6Cf"/>
                         <outletCollection property="classicalUIButtons" destination="nIP-dA-p85" collectionClass="NSMutableArray" id="Lw1-9r-P9P"/>
                         <outletCollection property="classicalUIButtons" destination="HXf-cg-j9G" collectionClass="NSMutableArray" id="sn9-UV-Ngd"/>
-                        <outletCollection property="classicalUIButtons" destination="jwZ-9n-aw6" collectionClass="NSMutableArray" id="f3G-gn-woD"/>
+                        <outletCollection property="classicalUIButtons" destination="pS4-wT-UEA" collectionClass="NSMutableArray" id="Hn0-qZ-eSo"/>
+                        <outletCollection property="classicalUIButtons" destination="jwZ-9n-aw6" collectionClass="NSMutableArray" id="Lat-S5-LDx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-W2-ubX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
