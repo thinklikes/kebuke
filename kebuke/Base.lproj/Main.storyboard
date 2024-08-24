@@ -483,46 +483,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink-template" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-dT-I2e">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="294.66666666666669"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="7Qo-dT-I2e" secondAttribute="height" multiplier="4:3" id="V5L-va-dqL"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink-template" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-dT-I2e">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ys8-YU-7Nw">
-                                <rect key="frame" x="16" y="306.66666666666669" width="361" height="40"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朱玉歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ram-a5-IY0">
-                                        <rect key="frame" x="0.0" y="9.9999999999999982" width="180.66666666666666" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$70" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-Ph-bmq">
-                                        <rect key="frame" x="180.66666666666663" y="5.6666666666666305" width="180.33333333333337" height="28.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="s7I-dk-f9d"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木質果香調的熟成紅茶與香醇濃厚的鮮奶" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKW-Od-V9b">
-                                <rect key="frame" x="16" y="346.66666666666669" width="361" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="FbK-nR-5vs"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="朱玉歐蕾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ram-a5-IY0">
+                                <rect key="frame" x="16" y="405" width="172" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$70" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-Ph-bmq">
+                                <rect key="frame" x="285" y="405" width="92" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="木質果香調的熟成紅茶與香醇濃厚的鮮奶" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKW-Od-V9b">
+                                <rect key="frame" x="16" y="453" width="361" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSv-KI-FKh">
-                                <rect key="frame" x="16" y="781.33333333333337" width="361" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="UyT-m6-bie"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSv-KI-FKh">
+                                <rect key="frame" x="16" y="697" width="361" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="ThemeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="送出訂單" imagePadding="4" cornerStyle="capsule">
@@ -533,309 +521,298 @@
                                     <action selector="tapSubmitButton:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="fNX-Kz-MFt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同學．朱玉歐蕾．中杯．七分糖．少冰．$70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzT-zz-kxU">
-                                <rect key="frame" x="0.0" y="749.33333333333337" width="393" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="jiM-HG-qqe"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="同學．朱玉歐蕾．中杯．七分糖．少冰．$70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzT-zz-kxU">
+                                <rect key="frame" x="0.0" y="665" width="393" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="J9D-mx-LUs">
-                                <rect key="frame" x="8" y="497" width="377" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="尺寸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyF-fQ-mQ5">
+                                <rect key="frame" x="16" y="498" width="36" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="甜度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7t-pc-qpf">
+                                <rect key="frame" x="16" y="545" width="36" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjn-cQ-H3H">
+                                <rect key="frame" x="52" y="497" width="341" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="甜度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7t-pc-qpf">
-                                        <rect key="frame" x="0.0" y="44" width="36" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-wy-6FT">
-                                        <rect key="frame" x="36" y="44" width="341" height="46"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-KB-5WE">
+                                        <rect key="frame" x="0.0" y="0.0" width="341" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" id="oFs-Ji-e0f">
-                                                <rect key="frame" x="0.0" y="0.0" width="504" height="46"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55A-PC-mBx">
+                                                <rect key="frame" x="72" y="8" width="64" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDQ-B7-f2q">
-                                                        <rect key="frame" x="0.0" y="8.3333333333333339" width="65" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="正常糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="oXh-Vz-RLb"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-y3-6vL">
-                                                        <rect key="frame" x="73" y="8.3333333333333339" width="65.333333333333314" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="少糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="hVZ-Vp-i7V"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-0R-fS4">
-                                                        <rect key="frame" x="146.33333333333334" y="8.3333333333333339" width="65" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="半糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="bQH-rp-VOe"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnU-er-Ttq">
-                                                        <rect key="frame" x="219.33333333333334" y="8.3333333333333339" width="65.333333333333343" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="微糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Lpn-ve-quJ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-fp-Hdc">
-                                                        <rect key="frame" x="292.66666666666669" y="8.3333333333333339" width="65" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="二分糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="STK-ZK-6KK"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-os-oNS">
-                                                        <rect key="frame" x="365.66666666666669" y="8.3333333333333339" width="65.333333333333314" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="一分糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="bLG-Cb-FNF"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxm-ZE-JcE">
-                                                        <rect key="frame" x="439" y="8.3333333333333339" width="65" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="無糖" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="u4p-gX-tES"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <viewLayoutGuide key="safeArea" id="kVa-6c-VRo"/>
-                                            </stackView>
-                                        </subviews>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="gjm-G8-Zm3"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="vys-6d-od6"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                                <size key="value" width="504" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </scrollView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冰塊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na4-o0-Izm">
-                                        <rect key="frame" x="0.0" y="88" width="36" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E04-Zk-xtm">
-                                        <rect key="frame" x="36" y="88" width="341" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" id="N5c-y7-i9O">
-                                                <rect key="frame" x="0.0" y="0.0" width="590" height="46"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="中杯" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSizeUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Tgz-2J-67h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-bP-GXR">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1Z-iL-3vz">
-                                                        <rect key="frame" x="0.0" y="8.3333333333333339" width="64" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="正常冰" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="k0a-Ec-xnf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-tL-bqg">
-                                                        <rect key="frame" x="90.333333333333329" y="8.3333333333333339" width="50.666666666666671" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="少冰" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="RNt-0P-cqn"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZk-9J-VRD">
-                                                        <rect key="frame" x="167.33333333333334" y="8.3333333333333339" width="50.666666666666657" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="微冰" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="wr8-X1-cK3"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXn-lY-9O1">
-                                                        <rect key="frame" x="244.33333333333334" y="8.3333333333333339" width="50.666666666666657" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="去冰" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="6mp-wx-irl"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEp-CW-te6">
-                                                        <rect key="frame" x="321.66666666666669" y="0.33333333333333215" width="64" height="45.333333333333343"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="完全去冰" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Tc6-n0-Z5j"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-4d-of8">
-                                                        <rect key="frame" x="412" y="8.3333333333333339" width="50.666666666666686" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="常溫" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="tvN-Ny-HpD"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTZ-UX-XNv">
-                                                        <rect key="frame" x="489" y="8.3333333333333339" width="37.333333333333371" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="溫" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="phk-ht-Llu"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUW-tu-t6l">
-                                                        <rect key="frame" x="552.66666666666663" y="8.3333333333333339" width="37.333333333333371" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="熱" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="5cu-Iv-cSG"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <viewLayoutGuide key="safeArea" id="KMH-MN-tKh"/>
-                                            </stackView>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="大杯" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSizeUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="czO-zq-ibG"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="mYw-dM-dGU"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="PtZ-Ou-VtF"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                                <size key="value" width="590" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </scrollView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="WN2-Pc-Ymw"/>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTo-OR-l9I">
-                                <rect key="frame" x="0.0" y="431" width="367.66666666666669" height="46"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hqz-DV-cGe"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="z6r-F4-DPq"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-wy-6FT">
+                                <rect key="frame" x="52" y="543" width="341" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尺寸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lyF-fQ-mQ5">
-                                        <rect key="frame" x="0.0" y="0.0" width="26.666666666666668" height="46"/>
+                                    <view contentMode="scaleToFill" id="5rJ-Zf-R48">
+                                        <rect key="frame" x="0.0" y="0.0" width="504" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjn-cQ-H3H">
-                                        <rect key="frame" x="26.666666666666657" y="0.0" width="341" height="46"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" id="75b-Qj-XG6">
-                                                <rect key="frame" x="0.0" y="0.0" width="136" height="46"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDQ-B7-f2q">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55A-PC-mBx">
-                                                        <rect key="frame" x="0.0" y="8.3333333333333339" width="64" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="中杯" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSizeUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Tgz-2J-67h"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-bP-GXR">
-                                                        <rect key="frame" x="72" y="8.3333333333333339" width="64" height="29.666666666666664"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="大杯" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="tapSizeUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="czO-zq-ibG"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <viewLayoutGuide key="safeArea" id="XkL-uG-SW8"/>
-                                            </stackView>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="正常糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="oXh-Vz-RLb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-y3-6vL">
+                                                <rect key="frame" x="72" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="少糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="hVZ-Vp-i7V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-0R-fS4">
+                                                <rect key="frame" x="144" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="半糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="bQH-rp-VOe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnU-er-Ttq">
+                                                <rect key="frame" x="216" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="微糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Lpn-ve-quJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-fp-Hdc">
+                                                <rect key="frame" x="288" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="二分糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="STK-ZK-6KK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-os-oNS">
+                                                <rect key="frame" x="360" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="一分糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="bLG-Cb-FNF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxm-ZE-JcE">
+                                                <rect key="frame" x="432" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="無糖" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapSugarUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="u4p-gX-tES"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="hqz-DV-cGe"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="z6r-F4-DPq"/>
-                                    </scrollView>
+                                        <viewLayoutGuide key="safeArea" id="IAY-xJ-NZf"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gjm-G8-Zm3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vys-6d-od6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="504" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E04-Zk-xtm">
+                                <rect key="frame" x="52" y="589" width="341" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="yyy-0k-g4D">
+                                        <rect key="frame" x="0.0" y="0.0" width="590" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1Z-iL-3vz">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="正常冰" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="k0a-Ec-xnf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-tL-bqg">
+                                                <rect key="frame" x="72" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="少冰" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="RNt-0P-cqn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZk-9J-VRD">
+                                                <rect key="frame" x="144" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="微冰" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="wr8-X1-cK3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXn-lY-9O1">
+                                                <rect key="frame" x="216" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="去冰" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="6mp-wx-irl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEp-CW-te6">
+                                                <rect key="frame" x="288" y="8" width="78" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="完全去冰" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="Tc6-n0-Z5j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-4d-of8">
+                                                <rect key="frame" x="374" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="常溫" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="tvN-Ny-HpD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTZ-UX-XNv">
+                                                <rect key="frame" x="446" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="溫" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="phk-ht-Llu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUW-tu-t6l">
+                                                <rect key="frame" x="518" y="8" width="64" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="熱" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapTemperatureUIButtons:" destination="9Xh-QU-Kpm" eventType="touchUpInside" id="5cu-Iv-cSG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="0WV-pd-XMv"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mYw-dM-dGU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="PtZ-Ou-VtF"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="590" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冰塊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na4-o0-Izm">
+                                <rect key="frame" x="16" y="590" width="36" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rnG-0J-fdh"/>
                         <color key="backgroundColor" name="WeakColor"/>
-                        <constraints>
-                            <constraint firstItem="rnG-0J-fdh" firstAttribute="bottom" secondItem="tSv-KI-FKh" secondAttribute="bottom" multiplier="1.02" id="1Vx-Hm-2cT"/>
-                            <constraint firstItem="7Qo-dT-I2e" firstAttribute="trailing" secondItem="rnG-0J-fdh" secondAttribute="trailing" id="1r8-3X-vTq"/>
-                            <constraint firstItem="Ys8-YU-7Nw" firstAttribute="leading" secondItem="rnG-0J-fdh" secondAttribute="leading" constant="16" id="6hs-pq-AOm"/>
-                            <constraint firstItem="7Qo-dT-I2e" firstAttribute="top" secondItem="rnG-0J-fdh" secondAttribute="top" id="B60-Xq-Ptb"/>
-                            <constraint firstItem="rnG-0J-fdh" firstAttribute="trailing" secondItem="Ys8-YU-7Nw" secondAttribute="trailing" constant="16" id="CPI-QA-VBN"/>
-                            <constraint firstItem="rzT-zz-kxU" firstAttribute="trailing" secondItem="rnG-0J-fdh" secondAttribute="trailing" id="QBK-sd-8GL"/>
-                            <constraint firstItem="rzT-zz-kxU" firstAttribute="leading" secondItem="rnG-0J-fdh" secondAttribute="leading" id="R75-v2-6KT"/>
-                            <constraint firstItem="DKW-Od-V9b" firstAttribute="leading" secondItem="rnG-0J-fdh" secondAttribute="leading" constant="16" id="SOl-fL-bPd"/>
-                            <constraint firstItem="rnG-0J-fdh" firstAttribute="trailing" secondItem="tSv-KI-FKh" secondAttribute="trailing" constant="16" id="XQJ-l9-vPC"/>
-                            <constraint firstItem="tSv-KI-FKh" firstAttribute="leading" secondItem="rnG-0J-fdh" secondAttribute="leading" constant="16" id="YDy-1B-9Bg"/>
-                            <constraint firstItem="Ys8-YU-7Nw" firstAttribute="top" secondItem="7Qo-dT-I2e" secondAttribute="bottom" constant="12" id="avV-2T-VQS"/>
-                            <constraint firstItem="7Qo-dT-I2e" firstAttribute="leading" secondItem="rnG-0J-fdh" secondAttribute="leading" id="djl-Ij-5C1"/>
-                            <constraint firstItem="DKW-Od-V9b" firstAttribute="top" secondItem="Ys8-YU-7Nw" secondAttribute="bottom" id="fCW-cU-3pT"/>
-                            <constraint firstItem="tSv-KI-FKh" firstAttribute="top" secondItem="rzT-zz-kxU" secondAttribute="bottom" constant="8" symbolic="YES" id="nXa-xi-c4K"/>
-                            <constraint firstItem="rnG-0J-fdh" firstAttribute="trailing" secondItem="DKW-Od-V9b" secondAttribute="trailing" constant="16" id="zpr-83-Q5m"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zBF-at-fsW"/>
                     <connections>
@@ -845,28 +822,28 @@
                         <outlet property="drinkPrice" destination="vBX-Ph-bmq" id="nAF-jM-Kp5"/>
                         <outlet property="orderLabel" destination="rzT-zz-kxU" id="OjN-ya-GGB"/>
                         <outlet property="submitButton" destination="tSv-KI-FKh" id="U2J-no-FVj"/>
+                        <outletCollection property="sizeUIButtons" destination="2RC-bP-GXR" collectionClass="NSMutableArray" id="sds-2K-hAZ"/>
+                        <outletCollection property="sizeUIButtons" destination="55A-PC-mBx" collectionClass="NSMutableArray" id="HXG-Ll-6Hv"/>
                         <outletCollection property="sugarUIButtons" destination="CDQ-B7-f2q" collectionClass="NSMutableArray" id="b8m-qf-c8X"/>
-                        <outletCollection property="sugarUIButtons" destination="KnU-er-Ttq" collectionClass="NSMutableArray" id="qWX-T6-tGj"/>
-                        <outletCollection property="sugarUIButtons" destination="4F8-0R-fS4" collectionClass="NSMutableArray" id="qcL-B8-xde"/>
                         <outletCollection property="sugarUIButtons" destination="lQM-y3-6vL" collectionClass="NSMutableArray" id="gvK-x5-8fr"/>
+                        <outletCollection property="sugarUIButtons" destination="4F8-0R-fS4" collectionClass="NSMutableArray" id="qcL-B8-xde"/>
+                        <outletCollection property="temperatureUIButtons" destination="S1Z-iL-3vz" collectionClass="NSMutableArray" id="e0x-nQ-9qs"/>
+                        <outletCollection property="sugarUIButtons" destination="KnU-er-Ttq" collectionClass="NSMutableArray" id="qWX-T6-tGj"/>
+                        <outletCollection property="sugarUIButtons" destination="F5L-fp-Hdc" collectionClass="NSMutableArray" id="XdX-de-xXp"/>
                         <outletCollection property="sugarUIButtons" destination="2uW-os-oNS" collectionClass="NSMutableArray" id="2iT-1Q-q6Q"/>
                         <outletCollection property="sugarUIButtons" destination="vxm-ZE-JcE" collectionClass="NSMutableArray" id="xFT-Fh-EI6"/>
-                        <outletCollection property="sugarUIButtons" destination="F5L-fp-Hdc" collectionClass="NSMutableArray" id="XdX-de-xXp"/>
-                        <outletCollection property="temperatureUIButtons" destination="S1Z-iL-3vz" collectionClass="NSMutableArray" id="e0x-nQ-9qs"/>
+                        <outletCollection property="temperatureUIButtons" destination="vUU-tL-bqg" collectionClass="NSMutableArray" id="JCm-GX-7Vq"/>
+                        <outletCollection property="temperatureUIButtons" destination="iZk-9J-VRD" collectionClass="NSMutableArray" id="nhP-cF-aah"/>
+                        <outletCollection property="temperatureUIButtons" destination="pXn-lY-9O1" collectionClass="NSMutableArray" id="8ex-na-ol8"/>
                         <outletCollection property="temperatureUIButtons" destination="wEp-CW-te6" collectionClass="NSMutableArray" id="wii-nu-KZX"/>
                         <outletCollection property="temperatureUIButtons" destination="SW0-4d-of8" collectionClass="NSMutableArray" id="to6-KQ-8wg"/>
                         <outletCollection property="temperatureUIButtons" destination="TTZ-UX-XNv" collectionClass="NSMutableArray" id="ymx-AI-H49"/>
                         <outletCollection property="temperatureUIButtons" destination="FUW-tu-t6l" collectionClass="NSMutableArray" id="KsX-wX-IMB"/>
-                        <outletCollection property="temperatureUIButtons" destination="iZk-9J-VRD" collectionClass="NSMutableArray" id="nhP-cF-aah"/>
-                        <outletCollection property="temperatureUIButtons" destination="pXn-lY-9O1" collectionClass="NSMutableArray" id="8ex-na-ol8"/>
-                        <outletCollection property="temperatureUIButtons" destination="vUU-tL-bqg" collectionClass="NSMutableArray" id="JCm-GX-7Vq"/>
-                        <outletCollection property="sizeUIButtons" destination="55A-PC-mBx" collectionClass="NSMutableArray" id="HXG-Ll-6Hv"/>
-                        <outletCollection property="sizeUIButtons" destination="2RC-bP-GXR" collectionClass="NSMutableArray" id="sds-2K-hAZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDH-Dd-C6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646.5648854961833" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1648" y="-2"/>
         </scene>
         <!--Orders-->
         <scene sceneID="QMO-5t-6Qd">
